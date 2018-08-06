@@ -1,0 +1,287 @@
+#mainNav {
+    height: 80px;
+    @include flexbox();
+    @include align-items(center);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    .menuToggle {
+        height: 20px;
+        width: 27px;
+        position: relative;
+        cursor: pointer;
+        .line {
+            width: 70%;
+            height: 1px;
+            display: block;
+            background: $white;
+            position: absolute;
+            &.top {
+                @include transition(ease 0.3s all);
+            }
+            &.middle {
+                top: 8px;
+                width: 100%;
+                left: 0;
+                @include transition(ease 0.3s width);
+            }
+            &.bottom {
+                top: 16px;
+                @include transition(ease 0.3s all);
+            }
+        }
+        &.toggled {
+            .line {
+                &.middle {
+                    width: 0;
+                    @include transition(ease 0.3s width);
+                }
+                &.top {
+                    transform: rotate(45deg);
+                    transform-origin: 0 0;
+                    @include transition(ease 0.3s all);
+                    right: 7px;
+                    top: 3px;
+                }
+                &.bottom {
+                    transform: rotate(-45deg);
+                    transform-origin: 0 0;
+                    @include transition(ease 0.3s all);
+                }
+            }
+        }
+    }
+}
+
+body {
+    .nav-menu {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        width: 0;
+        visibility: hidden;
+        @include transition(0.2 ease all);
+        @include flexbox();
+        @include align-items(center);
+        .container {
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(space-between);
+            position: relative;
+            height: 100%;
+        }
+        .navigation-links {
+            letter-spacing: 4px;
+            a {
+
+                display: block;
+                margin-bottom: 1.5rem;
+                color: $white;
+                font-family: $Sans-Medium, sans-serif;
+                font-size: 3.5rem;
+                position: relative;
+                transition: opacity 0.3s ease;
+                margin-left: -3rem;
+                opacity: 0;
+                letter-spacing: 0;
+
+                &::before {
+                    content: "";
+                    background-color: $primary;
+                    width: 0;
+                    height: 4px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 30px;
+                    @include transition(width 0.3s ease);
+                }
+                &.active {
+                    opacity: 1;
+                }
+                &:hover {
+                    opacity: 1;
+                    transition: opacity 0.3s ease;
+                    &:before {
+                        width: 5rem;
+                        @include transition(width 0.3s ease);
+                    }
+                }
+            }
+        }
+        .address {
+            margin-bottom: 3.42rem;
+            text-align: right;
+            margin-right: -3rem;
+            opacity: 0;
+            h5 {
+                font-size: 1.2rem;
+                font-family: $Sans-Medium;
+                letter-spacing: 1px;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 2;
+            }
+        }
+        .timer-wrapper {
+            .timer {
+                display: flex;
+                align-items: center;
+                border: solid 1px #282a2e;
+                padding: 22px;
+                justify-content: space-between;
+                width: 365px;
+                height: 147px;
+                .dvr {
+                    width: 1px;
+                    height: 61px;
+                    background-color: #282a2e;
+                }
+                .time {
+                    text-align: center;
+                    h2 {
+                        font-size: 4rem;
+                        font-family: $DINNextLTPro-Medium;
+                        margin-bottom: 1rem;
+                        opacity: 0;
+                    }
+                    p {
+                        margin-bottom: 1rem;
+                        font-size: 0.9rem;
+                        color: $slate-grey;
+                        letter-spacing: 1px;
+                        opacity: 0;
+                    }
+                }
+            }
+            .event-name {
+                text-align: right;
+                margin: 2.5rem 0;
+                opacity: 0;
+                margin-right: -3rem;
+                opacity: 0;
+                a {
+                    color: $primary;
+                }
+            }
+        }
+        .contact-link {
+            position: absolute;
+            bottom: 100px;
+            font-size: 1.7rem;
+            font-family: $Sans-Medium;
+            color: $white;
+            opacity: 0;
+            margin-left: -3rem;
+        }
+        .hiring-link {
+            font-size: 1.12rem;
+            color: $white;
+            position: absolute;
+            bottom: 100px;
+            right: 0;
+            margin-right: -3rem;
+            opacity: 0;
+            a {
+                color: $white;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &.nav-open {
+        overflow: hidden;
+        .nav-menu {
+            width: 100%;
+            visibility: visible;
+            background: #0f0e19;
+            z-index: 98;
+            top: 0;
+            left: 0;
+            position: fixed;
+            .address,
+            .hiring-link {
+                margin-right: 0;
+                opacity: 1;
+                @include transition(all ease 0.3s);
+            }
+            .navigation-links {
+                a {
+                    @include transition(all ease 0.3s);
+
+                    @for $i from 1 through 4 {
+                        &:nth-child(#{$i}) {
+                            opacity: 0.5;
+                            margin-left: 0;
+                            @include transition(all ease 0.3s);
+                            transition-delay: #{$i/8}s;
+                            &:hover{
+                                opacity: 1;
+                                @include transition(opacity ease 0.3s);
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-link {
+                opacity: 1;
+                margin-left: 0;
+                @include transition(all ease 0.3s);
+                transition-delay: 0.75s;
+            }
+            .event-name {
+                margin-right: 0;
+                opacity: 1;
+                @include transition(all ease 0.3s);
+            }
+            .time {
+                @for $i from 1 through 3 {
+                    &:nth-child(#{$i}) {
+                        h2 {
+                            margin-bottom: 0;
+                            opacity: 1;
+                            @include transition(all ease 0.3s);
+                            transition-delay: #{$i/5}s;
+                        }
+                        p {
+                            margin-bottom: 0;
+                            opacity: 1;
+                            @include transition(all ease 0.3s);
+                            transition-delay: #{$i/6}s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.nav-closing {
+        .nav-menu {
+            width: 100%;
+            visibility: visible;
+            background: #0f0e19;
+            z-index: 98;
+            top: 0;
+            left: 0;
+            position: fixed;
+            opacity: 0;
+            @include transition(opacity 1s ease);
+            transition-delay: 1s;
+            .navigation-links {
+                margin-left: -3rem;
+                opacity: 0;
+                @include transition(all ease 0.3s);
+            }
+            .timer {
+                margin-right: -3rem;
+                opacity: 0;
+                @include transition(all ease 0.3s);
+            }
+            .event-name {
+                margin-right: -3rem;
+                opacity: 0;
+                @include transition(all ease 0.3s);
+            }
+        }
+    }
+}

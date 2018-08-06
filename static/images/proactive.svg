@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.574 196.574">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1b1e26;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <g id="proactive" transform="translate(4.772 5.818)">
+    <rect id="Rectangle_90" data-name="Rectangle 90" class="cls-1" width="139" height="139" transform="translate(93.515 190.756) rotate(-135)"/>
+    <rect id="Rectangle_84" data-name="Rectangle 84" class="cls-2" width="62.553" height="9.891" transform="translate(27.687 124.896) rotate(-45)"/>
+    <rect id="Rectangle_85" data-name="Rectangle 85" class="cls-2" width="62.553" height="9.891" transform="translate(71.837 131.895) rotate(-135)"/>
+    <rect id="Rectangle_86" data-name="Rectangle 86" class="cls-2" width="39.608" height="12" transform="translate(105.077 131.895) rotate(90)"/>
+    <rect id="Rectangle_87" data-name="Rectangle 87" class="cls-2" width="47.449" height="12" transform="translate(140.919 143.322) rotate(180)"/>
+    <rect id="Rectangle_88" data-name="Rectangle 88" class="cls-2" width="77.376" height="12" transform="translate(104.91 171.713) rotate(180)"/>
+    <rect id="Rectangle_89" data-name="Rectangle 89" class="cls-2" width="58.608" height="12" transform="translate(140.781 84.444) rotate(90)"/>
+    <circle id="Ellipse_252" data-name="Ellipse 252" class="cls-3" cx="26.975" cy="26.975" r="26.975" transform="translate(108.184 8.245)"/>
+  </g>
+</svg>

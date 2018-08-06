@@ -1,0 +1,20 @@
+//global
+@import 'global/typography';
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/utils';
+
+//partials
+@import 'partials/header';
+@import 'partials/swiper';
+@import 'partials/icons';
+@import 'partials/animations';
+@import 'partials/sections';
+@import 'partials/forms';
+
+//pages
+@import 'pages/intro';
+@import 'pages/homepage';
+@import 'pages/about';
+@import 'pages/process';
+@import 'pages/contact';
