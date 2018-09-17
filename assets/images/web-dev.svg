@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 217.6 210.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: #13161e;
+      }
+
+      .cls-3, .cls-5 {
+        stroke: #9f9f9f;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #9f9f9f;
+      }
+
+      .cls-5 {
+        fill: #080d19;
+      }
+
+      .cls-6 {
+        filter: url(#Path_1);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.163" y1="0.149" x2="0.846" y2="0.889" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#242931"/>
+      <stop offset="1" stop-color="#1c1f27"/>
+    </linearGradient>
+    <filter id="Path_1" x="0" y="0" width="217.6" height="210.2" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.042" y1="0.618" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1d2029"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+  <g id="web-dev" transform="translate(-169.7 5.6)">
+    <g class="cls-6" transform="matrix(1, 0, 0, 1, 169.7, -5.6)">
+      <path id="Path_1-2" data-name="Path 1" class="cls-1" d="M311.6.4,211.9,19.8l-33.2,96,66.7,76.8,99.7-19.4,33.2-96Z" transform="translate(-169.7 5.6)"/>
+    </g>
+    <path id="Path_3" data-name="Path 3" class="cls-2" d="M311.6.4,211.9,19.8l-33.2,96,66.7,76.8Z"/>
+    <circle id="Ellipse_122" data-name="Ellipse 122" class="cls-3" cx="5.5" cy="5.5" r="5.5" transform="translate(304 74)"/>
+    <rect id="Rectangle_28" data-name="Rectangle 28" class="cls-4" width="19.9" height="1.9" transform="translate(291.128 97.138) rotate(-45)"/>
+    <circle id="Ellipse_123" data-name="Ellipse 123" class="cls-3" cx="5.5" cy="5.5" r="5.5" transform="translate(282 95)"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" class="cls-4" width="19.9" height="1.5" transform="translate(281.934 99.988) rotate(-165.552)"/>
+    <circle id="Ellipse_124" data-name="Ellipse 124" class="cls-5" cx="5.5" cy="5.5" r="5.5" transform="translate(253 86)"/>
+    <rect id="Rectangle_30" data-name="Rectangle 30" class="cls-4" width="19.9" height="1.9" transform="matrix(0.828, -0.56, 0.56, 0.828, 237.997, 105.675)"/>
+    <circle id="Ellipse_125" data-name="Ellipse 125" class="cls-5" cx="5.5" cy="5.5" r="5.5" transform="translate(228.5 103.5)"/>
+  </g>
+</svg>

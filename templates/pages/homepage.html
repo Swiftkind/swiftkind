@@ -1,0 +1,329 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="particles-wrapper">
+    <canvas class="particles" ></canvas>
+    <div class="masthead container">
+        <div class="" >
+            <div class="text-content">
+                <h3  class="box wow fadeInUp" data-speed="7"  data-wow-duration="0.5s" data-wow-delay="0.5s">We are</h3>
+                <img src="{% static 'images/logo.png' %}"
+                     srcset="{% static 'images/logo@2x.png' %} 2x,
+                             {% static 'images/logo@3x.png' %} 3x"
+                             class="box wow fadeInUp" data-speed="3"  data-wow-duration="0.5s" data-wow-delay="1s">
+                <p class="wow fadeInUp"  data-wow-duration="0.5s" data-wow-delay="1.2s">A digital product development Company</p>
+            </div>
+            <span class="wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="1s">
+                <a href="{% url 'about' %}" class="about-link">Know our story</a>
+            </span>
+            <span class="wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="1s">
+                <a href="" class="project-link">Explore projects</a>
+            </span>
+            <div class="footnote">
+                <p class="box wow fadeInUp" data-speed="7"  data-wow-duration="0.5s" data-wow-delay="1.25s">Design + Development</p>
+                <p class="box wow fadeInUp" data-speed="7"  data-wow-duration="0.5s" data-wow-delay="1.5s">57,404 team contributions ( Github )</p>
+            </div>
+        </div>
+    </div>
+    <div class="unveil" data-200="background-color: rgb(100,100,100); left: 100%; width:0%;" data-800="background-color: rgb(240,240,240); left:0; width: 100%;" ></div>
+    <div class="swiftkind-stats section d-flex align-items-center" data-300="background-color: rgb(13,15,25)" data-400="background-color: rgb(240,240,240);" data-1500="background-color: rgb(240,240,240);"  data-2000="background-color: rgb(13,15,25)s">
+        <div class="svc-bg" style=" background-image: url('{% static 'images/bg-anim.svg' %}');"data-500="opacity: 0" data-700="opacity: 1">
+            
+        </div>
+        <div class="container">
+            <p class="section-title wow fadeInUp"  data-wow-duration="0.5s" data-wow-delay="0s">
+                THINGS WE DO
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-links">
+                        <div class="link wow fadeInDown" data-speed="4"  data-wow-duration="0.5s"  >
+                            <div class="line"></div>
+                            <h2>UI/UX DESIGN</h2>
+                            <!-- <a href="ui-ux.html" class="secondary-link">explore
+                                <span class="icon ion-ios-arrow-right"></span>
+                            </a> -->
+                        </div>
+                        <div class="link wow fadeInUp" data-speed="4"  data-wow-duration="0.5s" >
+                            <div class="line"></div>
+                            <h2>WEB DEVELOPMENT</h2>
+                            <!-- <a href="#" class="secondary-link">explore
+                                <span class="icon ion-ios-arrow-right"></span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-content text-right">
+                        <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
+                            We’re crafting digital solutions to step up your game
+                        </h2>
+                        <p class="box wow fadeInUp" data-speed="4"  data-wow-duration="0.5s" data-wow-delay="1s">Committed to deliver products that innovate the way people connect and work. Creating experiences that help individuals, startups, brands and corporations innovate and change lives.</p>
+                        <a href="process.html" class="primary-link btn box wow fadeIn" data-speed="4"  data-wow-duration="0.5s" data-wow-delay="1.5s">
+                            <span class="icon ion-ios-arrow-right"></span>
+                            UNDERSTAND OUR  PROCESS
+                        </a>
+                    </div>
+                    <div class="company-stats">
+                        <div>
+                            <h2 class="wow fadeIn"  data-wow-duration="0.5s" data-wow-delay="1s"  >16</h2>
+                            <p class="wow fadeInUp"  data-wow-duration="0.5s" data-wow-delay="1.2s"  >Team members</p>
+                        </div>
+                        <div>
+                            <h2 class="wow fadeIn"  data-wow-duration="0.5s" data-wow-delay="1.2s"  >34</h2>
+                            <p class="wow fadeInUp"  data-wow-duration="0.5s" data-wow-delay="1.4s"  >Total Projects</p>
+                        </div>
+                        <div>
+                            <h2 class="wow fadeIn"  data-wow-duration="0.5s" data-wow-delay="1.4s"  >02</h2>
+                            <p class="wow fadeInUp"  data-wow-duration="0.5s" data-wow-delay="1.6s"  >Years in Business</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section services">
+        <div class="svc-unveil" data-200="right: 100%; width:0%;" data-1200="right:0; width: 100%;" data-1350="opacity:1" data-1500="opacity:0;"></div>
+        <div class="container" data-2000="opacity:1" data-2100="opacity:0;">
+            <div class="row">
+                <div class="svc-col svc-desc">
+                    <div class="">
+                        <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">With the right ideas, execution, and people we can create something fantastic.</p>
+                    </div>
+                </div>
+                <div class="svc-col left d-flex wow fadeInUp"  data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <div class="svc-icon">
+                        <img src="{% static 'images/web-dev.svg' %}">
+                        <p>WEB DEVELOPMENT</p>
+                    </div>
+                    <ul class="tech-list row no-gutters">
+                        <div class="col-md-6">
+                            <li>
+                                <p>Python (2.x & 3.x)</p>
+                            </li>
+                            <li>
+                                <p>
+                                    Django Framework
+                                </p>
+                            </li>
+                            <li>
+                                <p>Restful APIs (DRF)</p>
+                            </li>
+                            <li>
+                                <p>Angular JS (1.x,2 & 4)</p>
+                            </li>
+                            <li>
+                                <p>JavaScript (ES5/ES6)</p>
+                            </li>
+                            <li>
+                                <p>MySQL, Sqlite, PostgreSQL</p>
+                            </li>
+                        </div>
+                        <div class="col-md-6">
+                            <li>
+                                <p>
+                                    Linux/Ubuntu (DO, AWS)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    HTML5/CSS3 (Sass/Less)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Bootstrap 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Bulma
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    SemanticUI
+                                </p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="svc-col right d-flex wow fadeInUp "  data-wow-duration="0.5s" data-wow-delay="1s">
+                    <div class="svc-icon">
+                        <img src="{% static 'images/design.svg' %}">
+                        <p>UI/UX DESIGN</p>
+                    </div>
+                    <ul class="tech-list row no-gutters">
+                        <div class="col-md-6">
+                            <li>
+                                <p>Sketch</p>
+                            </li>
+                            <li>
+                                <p>
+                                    Photoshop
+                                </p>
+                            </li>
+                            <li>
+                                <p>Adobe XD</p>
+                            </li>
+                            <li>
+                                <p>Illustrator</p>
+                            </li>
+                            <li>
+                                <p>Invision</p>
+                            </li>
+                            <li>
+                                <p>Zeplin</p>
+                            </li>
+                        </div>
+                        <div class="col-md-6">
+                            <li>
+                                <p>
+                                    Prototyping
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Responsive design
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Wireframes
+                                </p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="svc-col left2 d-flex wow fadeInUp"  data-wow-duration="0.5s" data-wow-delay="1.5s">
+                    <div class="svc-icon">
+                        <img src="{% static 'images/cross-platform.svg' %}">
+                        <p>CROSS-PLATFORM APPS</p>
+                    </div>
+                    <ul class="tech-list row no-gutters">
+                        <div class="col-md-6">
+                            <li>
+                                <p>Ionic</p>
+                            </li>
+                            <li>
+                                <p>
+                                    AngularJS
+                                </p>
+                            </li>
+                            <li>
+                                <p>Firebase</p>
+                            </li>
+                            <li>
+                                <p>Titanium</p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="svc-col right2 d-flex wow fadeInUp "  data-wow-duration="0.5s" data-wow-delay="2s">
+                    <div class="svc-icon">
+                        <img src="{% static 'images/api.svg' %}">
+                        <p>API DEVELOPMENT</p>
+                    </div>
+                    <ul class="tech-list row no-gutters">
+                        <div class="col-md-6">
+                            <li>
+                                <p>Django Rest Framework</p>
+                            </li>
+                            <li>
+                                <p>
+                                    Linux/Ubuntu Servers
+                                </p>
+                            </li>
+                            <li>
+                                <p>Nginx (uwsgi/gunicorn)</p>
+                            </li>
+                            <li>
+                                <p>AWS</p>
+                            </li>
+                            <li>
+                                <p>Digital Ocean</p>
+                            </li>
+                            <li>
+                                <p>Celery (Real-time tool)</p>
+                            </li>
+                        </div>
+                        <div class="col-md-6">
+                            <li>
+                                <p>
+                                    Prototyping
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Responsive design
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Wireframes
+                                </p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="works section-works" data-1800="opacity:0" data-2400="opacity:1">
+        <div class="container mb-5" >
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h3 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">Stuff we’re proud of.</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="">
+                        <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">Our constant desire to build solutions using cutting-edge technologies often leads us to enjoyable experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <!-- Swiper -->
+             <div class="swiper-container wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s" id="projectsSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/custom-size-1.png' %}"
+                         srcset="{% static 'images/custom-size-1@2x.png' %} 2x,
+                                 {% static 'images/custom-size-1@3x.png' %} 3x"
+                         class="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/custom-size-2.png' %}"
+                         srcset="{% static 'images/custom-size-2@2x.png' %} 2x,
+                                 {% static 'images/custom-size-2@3x.png' %} 3x"
+                         class="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/custom-size-3.png' %}"
+                         srcset="{% static 'images/custom-size-3@2x.png' %} 2x,
+                                 {% static 'images/custom-size-3@3x.png' %} 3x"
+                         class="">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="team">
+        <div class="container">
+            <div class="text-center mx-auto w-75">
+                <h3 class="fadeInUp wow mb-5" data-wow-delay="0s" data-wow-duration="0.5s">Get to know us</h3>
+                <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">A small team of keen, specialized and diverse people believing that our works could improve people’s daily lives. Fueled by our passion for our work, we pursue learing to keep up with the best practices and industry standards.</p>
+                <a href="about.html" class="mx-auto secondary-link justify-content-center wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
+                    know our story
+                    <span class="icon ion-ios-arrow-right"></span>
+                </a>
+            </div>
+        </div>
+</div>
+{% endblock %}

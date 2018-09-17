@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274.6 274.599">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1f4243;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        stroke-dasharray: 12.068 12.068;
+      }
+    </style>
+  </defs>
+  <g id="cycle" transform="translate(-1.6 -1.6)">
+    <circle id="Ellipse_226" data-name="Ellipse 226" class="cls-1" cx="136.3" cy="136.3" r="136.3" transform="translate(2.6 2.6)"/>
+  </g>
+</svg>

@@ -1,0 +1,186 @@
+.unveil {
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.slide-from-left {
+    animation: slide-from-left ease forwards;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        background: #13181f;
+        left: 0;
+        animation: slide-from-bottom 1s ease;
+        animation-delay: 1.5s;
+    }
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    99% {
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.slide-down-content {}
+
+@keyframes slide-from-left {
+
+    0% {
+        background: #D8D8D8;
+        transform: scaleX(0);
+        transform-origin: 100% 100%;
+    }
+    99% {
+        background: #D8D8D8;
+        transform: scaleX(1);
+        transform-origin: 100% 100%;
+    }
+    100% {
+        background: #13181f;
+    }
+}
+
+@keyframes slide-from-bottom {
+    0% {
+        height: 100%;
+        width: 100%;
+        transform: scaleY(0);
+        transform-origin: 100% 100%;
+        opacity: 1;
+    }
+    20%,
+    75% {
+        height: 100%;
+        width: 100%;
+        transform: scaleY(1);
+        transform-origin: 100% 100%;
+        opacity: 1;
+    }
+    100% {
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        transform: scaleX(0);
+        transform-origin: 0 0;
+    }
+    45%,
+    75% {
+        transform: scaleX(1);
+        transform-origin: 0 100%;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: 100% 100%;
+    }
+}
+
+//loading anim
+.bg-anim {
+    position: relative;
+    display: inline-block;
+    .text-anim {
+        animation-name: text-anim;
+        animation-duration: 0.5s;
+        transition: ease;
+        position: relative;
+        margin-bottom: 0;
+        &.inverted-text {
+            color: inherit;
+        }
+    }
+    .anim {
+
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        animation-name: anim;
+        animation-duration: 0.5s;
+        transition: ease;
+        visibility: hidden;
+    }
+}
+
+
+@keyframes anim {
+    0% {
+        background-color: $primary;
+        transform-origin: 0% 50% 0px;
+        transform: scaleX(1);
+        opacity: 0;
+        visibility: hidden;
+    }
+    80% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        background-color: $primary;
+        transform-origin: 100% 50% 0px;
+        transform: scaleX(0);
+        opacity: 0;
+    }
+}
+
+@keyframes text-anim {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes cycle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+//heading text animation
+.text-animate .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+//link animations
+.hvr-underline-from-center {
+    transition: 0.2s ease;
+    &:hover {
+        color: $primary !important;
+        transition: 0.2s ease;
+    }
+    &:before {
+        background: $white;
+        bottom: 2px;
+    }
+}

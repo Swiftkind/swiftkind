@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 193 183.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #9f9f9f;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #101219;
+      }
+
+      .cls-5 {
+        filter: url(#Path_2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#242931"/>
+      <stop offset="1" stop-color="#1c1f27"/>
+    </linearGradient>
+    <filter id="Path_2" x="0" y="0" width="193" height="183.8" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1d2029"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+  <g id="design" transform="translate(9 6)">
+    <g class="cls-5" transform="matrix(1, 0, 0, 1, -9, -6)">
+      <path id="Path_2-2" data-name="Path 2" class="cls-1" d="M0,41.3,51.2,0l51.9,7.5,47.7,18.8L175,87.5,60.2,165.8Z" transform="translate(9 6)"/>
+    </g>
+    <path id="Path_4" data-name="Path 4" class="cls-2" d="M0,41.3,51.2,0l51.9,7.5L60.2,165.8Z"/>
+    <ellipse id="Ellipse_126" data-name="Ellipse 126" class="cls-3" cx="14.7" cy="33.2" rx="14.7" ry="33.2" transform="translate(59.629 47.908) rotate(-21.976)"/>
+    <ellipse id="Ellipse_127" data-name="Ellipse 127" class="cls-3" cx="33.2" cy="14.7" rx="33.2" ry="14.7" transform="matrix(0.784, -0.621, 0.621, 0.784, 50.533, 82.31)"/>
+    <circle id="Ellipse_128" data-name="Ellipse 128" class="cls-4" cx="2.4" cy="2.4" r="2.4" transform="translate(91.6 82.8)"/>
+    <circle id="Ellipse_129" data-name="Ellipse 129" class="cls-4" cx="2.4" cy="2.4" r="2.4" transform="translate(76 58.2)"/>
+  </g>
+</svg>

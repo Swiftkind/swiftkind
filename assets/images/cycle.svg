@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="221" height="221" viewBox="0 0 221 221">
+    <style>
+    #to-right {
+        animation: s1 cubic-bezier(0.55, 0.09, 0.68, 0.53) 0.5s;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes s1 {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 221px;
+        }
+    }
+
+    #to-up {
+        transform-origin: 100% 100%;
+        animation: w1 cubic-bezier(0.55, 0.09, 0.68, 0.53) 0.5s;
+        animation-delay:1s;
+    }
+
+    @keyframes w1 {
+        0% {
+            transform: scaleY(0);
+        }
+        100% {
+            transform: scaleY(1);
+        }
+    }
+
+    #to-down {
+        transform-origin: 100% 0;
+        animation: w1 cubic-bezier(0.55, 0.09, 0.68, 0.53) 0.5s;
+        animation-delay: 0.4s;
+    }
+
+    @keyframes w1 {
+        0% {
+            transform: scaleY(0);
+        }
+        100% {
+            transform: scaleY(1);
+        }
+    }
+
+    #to-left {
+        
+        animation: left cubic-bezier(0.55, 0.09, 0.68, 0.53) 0.5s;
+        transform-origin: 100% 100%;
+        animation-delay: 1.5s;
+    }
+
+    @keyframes left {
+        0% {
+            transform: scaleX(0);
+        }
+        100% {
+            transform: scaleX(1);
+        }
+    }
+    </style>
+    <defs>
+        <style>
+        .cls-1 {
+            fill: #fff;
+        }
+        </style>
+    </defs>
+    <rect id="to-up" data-name="" class="cls-1" x="0" width="28" height="221" />
+    <rect id="to-right" data-name="" class="cls-1" x="0" y="193" width="221" height="28" />
+    <rect id="to-down" data-name="" class="cls-1" x="193" width="28" height="221" />
+    <rect id="to-left" data-name="" class="cls-1" x="0" width="221" height="28" />
+</svg>

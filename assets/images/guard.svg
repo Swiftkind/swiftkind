@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="221" height="221" viewBox="0 0 221 221">
+    <defs>
+        <style>
+        .to-down {
+            transform-origin: 0 0;
+            animation: w1 cubic-bezier(0.55, 0.09, 0.68, 0.53) 0.3s;
+        }
+
+        @keyframes w1 {
+            0% {
+                transform: scaleY(0);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+
+        .cls-1 {
+            fill: #fff;
+        }
+        </style>
+    </defs>
+    <rect class="to-down cls-1" data-name="" x="0" width="28" height="221" />
+    <rect class="to-down cls-1" data-name="" x="96" width="28" height="221" />
+    <rect class="to-down cls-1" data-name="" x="192" width="28" height="221" />
+</svg>

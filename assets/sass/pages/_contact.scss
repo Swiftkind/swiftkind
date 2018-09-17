@@ -1,0 +1,20 @@
+.contact-masthead {
+    height: 100%;
+    max-height: 100%;
+    position: relative;
+    @include flexbox();
+    @include align-items(center);
+    .address {
+        p {
+            marbin-bottom: 0;
+            max-width: 80%;
+            
+        }
+    }
+    .line {
+        height: 6rem;
+        border-bottom: solid 2px $white;
+        display: block;
+        width: 100%;
+    }
+}

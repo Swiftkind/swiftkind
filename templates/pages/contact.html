@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="contact-masthead">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="section-content">
+					<h2 class="uppercase wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s" >
+						LET’S TALK ABOUT THE FUTURE
+					</h2>
+					<p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Swiftkind is a challenge-driven team eager to meet new people that push us to be more creative and bold. Tell us how you want to change the future and let’s rock on!</p>
+				</div>
+			</div>
+		</div>
+		<div class="address row align-items-center">
+			<div class="col-md-6 offset-md-6 d-flex justify-content-between">
+				<div class="d-flex justify-content-between flex-column text-content">
+					<p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">business@swiftkind.com</p>
+					<p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.85s">
+						Door 1, 3rd Floor, Consuelo Building, J.P. Laurel Avenue, Lanang, Davao City, Philippines, 8000
+					</p>
+					<p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.95s">
+						(082) 225 - 1050
+					</p>
+				</div>
+				<div class="d-flex justify-content-between flex-column">
+					<a href="https://github.com/Swiftkind" class="wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="1.5s">Github</a>
+					<a href="https://www.behance.net/restyantiqc47e" class="wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="1.5s">Behance</a>
+					<a href="https://www.facebook.com/swiftkind/" class="wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="1.5s">Facebook</a>
+				</div>
+			</div>
+		</div>
+		<div class="row ">
+			<div class="col-md-3">
+				<a href="#contactForm" class="arrow-direction wow slideInDown" id="contactFormlink" data-wow-duration="0.5s" data-wow-delay="1.5s">
+					DROP US A LINE
+					<span class="icon icon ion-ios-arrow-down"></span>
+				</a>
+			</div>
+			<div class="col-md-9">
+				<div class="line wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="contact-form" id="contactForm">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 offset-md-4">
+				<div class="section-content">
+					<h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-offset="60">We are always curious about what people want to develop. If you are interested in working with us, let’s chat!</h2>
+					<form class="form">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group required wow fadeInUp" data-wow-delay="0.2s" data-duration="0.5s">
+									<label>Your Name</label>
+									<input type="text" name="" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group required  wow fadeInUp" data-wow-delay="0.4s" data-duration="0.75s">
+									<label>Email</label>
+									<input type="email" name="" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group  wow fadeInUp" data-wow-delay="0.6s" data-duration="0.5s">
+									<label>Tell us about your project (or just send us a ‘hello!’)</label>
+									<textarea class="form-control"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-md-6 form-group  wow fadeInUp" data-wow-delay="0.8s" data-duration="0.5s">
+								<label>WHAT IS THE PROJECT ABOUT?</label>
+								<div>
+									<label class="form-check">
+										<input type="checkbox" name="" class="form-check-input" id="ChoiceWebDev">
+										<span class="checkmark"></span> 
+										Web Development
+									</label>
+								</div>
+								<div  class=" wow fadeInUp" data-wow-delay="0.5s" data-duration="1.2s">
+									<label class="form-check">
+										<input type="checkbox" name="" class="form-check-input" id="ChoiceUiUx">
+										<span class="checkmark"></span>
+										UI/UX Design
+									</label>
+								</div>
+								<div class=" wow fadeInUp" data-wow-delay="0.5s" data-duration="1.4s">
+									<label class="form-check">
+										<input type="checkbox" name="" class="form-check-input" id="ChoiceCrossPlattform">
+										<span class="checkmark"></span>
+										Cross-Platform Apps
+									</label>
+								</div>
+								<div class=" wow fadeInUp" data-wow-delay="0.5s" data-duration="1.4s">
+									<label class="form-check">
+										<input type="checkbox" name="" class="form-check-input" id="ChoiceApi">
+										<span class="checkmark"></span>
+										API Development
+									</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<a href="#" class="primary-link btn form-control">
+									SUBMIT
+									<span class="icon ion-ios-arrow-right"></span>
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="map">
+	<iframe src="https://snazzymaps.com/embed/27006" width="100%" height="600px" style="border:none;"></iframe>
+</div>
+{% endblock %}
