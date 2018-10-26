@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 74">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#ffbc2a;stroke-miterlimit:10;stroke-width:5px}.cls-2{fill:#ffbc2a}
+        </style>
+    </defs>
+    <g id="inquiry-icon" transform="translate(0 -1)">
+        <circle id="Ellipse_316" cx="34.5" cy="34.5" r="34.5" class="cls-1" data-name="Ellipse 316" transform="translate(2.5 3.5)"/>
+        <circle id="Ellipse_321" cx="6.2" cy="6.2" r="6.2" class="cls-2" data-name="Ellipse 321" transform="translate(30.8 21.1)"/>
+        <circle id="Ellipse_322" cx="11.4" cy="11.4" r="11.4" class="cls-2" data-name="Ellipse 322" transform="translate(25.6 37.2)"/>
+    </g>
+</svg>

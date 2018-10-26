@@ -2,285 +2,423 @@
 {% load static %}
 
 {% block content %}
-    <div class="about-masthead  container-fluid p-0">
-        <div class="bg-img" data-0="transform: scale(1)" data-200="transform[bounce]:scale(2)"></div>
-        <div class="container">
-            <div class=" text-center">
-                <h1 class="w-75 mx-auto wow fadeInUp" data-wow-delay="0s" data-wow-duration="0.5s" >PEOPLE BEHIND SWIFTKIND</h1>
-                <p class="mx-auto  wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s"> A small team of keen, specialized and diverse people believing that our works could improve people’s daily lives. Fueled by our passion for our work, we pursue learning to keep up with the best practices and industry standards.</p>
+<section class="h-sm-75 h-xs-100 d-flex align-items-center">
+    <div class="container">
+        <div class="w-sm-75 w-xs-100 mx-auto text-center mt-5">
+            <h2 class="medium text-dark-grey  wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">People behind Swiftkind</h2>
+            <div class="h-div mx-auto   wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s"></div>
+            <p class="text-gunmetal   wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.5s">A small team of keen, specialized and diverse people believing that our works could improve people’s daily lives. Fueled by our passion for our work, we pursue learning to keep up with the best practices and industry standards.</p>
+        </div>
+    </div>
+</section>
+<section class="">
+    <div class="container text-center">
+        <img src="{% static 'images/dscf-1165.jpg' %}"
+             srcset="{% static 'images/dscf-1165@2x.jpg' %} 2x,
+                     {% static 'images/dscf-1165@3x.jpg' %} 3x"
+             class="DSCF1165 mx-auto img-fluid   wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+    </div>
+</section>
+<section class="h-50 pt-5 d-flex align-items-center">
+    <div class="container pt-5">
+        <div class="w-sm-75">
+            <p class="text-highlight text-dark-grey mb-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">We are Swiftkind. We are no-nonsense, creative and dedicated group of individuals working together to produce benchmark products.</p>
+            <div class="h-div   wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s"></div>
+        </div>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'images/skills.svg' %}"
+                     class="Image-34 img-fluid wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">
+            </div>
+            <div class="col-md-5 offset-md-1 py-4">
+                <h2 class="medium text-dark-grey mb-4  wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s ">IDEAS HAVE NO BOUNDARIES. WE HAVE NO LIMITS.</h2>
+                <p class="mb-4   wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.5s">
+                    Our wide range of expertise combined with honest approach strengthen our relationship with our clients. This fuels us to work harder to come up with products that exceed expectations.
+                </p>
+                <p class="mb-5   wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
+                    Combining our creative thinking and problem solving skills, we deliver the right solutions that would allow our clients to meet objectives and business requirements.
+                </p>
+                <a href="process.html" class="medium text-primary   wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.5s">Understand our process</a>
             </div>
         </div>
     </div>
-    <div class="about-us-intro">
-    	<div class="container">
-    		<p class="section-title wow fadeInUp"  data-wow-duration="0.5s" data-wow-delay="0s">
-				THINGS WE DO
-			</p>
-			<div class="row">
-				<div class="col-md-7">
-					<div class="section-content">
-						<h2  class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">We are Swiftkind. We are no-nonsense, creative and dedicated group of individuals working together to produce benchmark products.</h2>
-					</div>
-				</div>
-				<div class="col-md-5 text-center">
-					<!-- <img src="{% static 'images/proactive.svg' %}" class="img-fluid proactive"> -->
-
-				</div>
-			</div>
-    	</div>
+</section>
+<section class="bg-slanted-highlight py-5 mb-5 h-75 d-flex align-items-center">
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-7 offset-md-1 mb-5">
+                <p class="h3 text-dark-grey medium mb-4   wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">We also take immense pride on our dedication to our clients through swift response and exceptional customer service. With full enthusiasm, we seek to build solid long term relationship based on trust.</p>
+                <a href="contact.html" class="h4 medium text-primary   wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">Start a project with us</a>
+            </div>
+        </div>
     </div>
-    <div class="about-section-two">
-    	<div class="container-fluid p-0">
-    		<div class="row no-gutters align-items-center">
-    			<div class="col-md-6">
-    				<img src="{% static 'images/off-42.png' %}"
-					     srcset="{% static 'images/off-42@2x.png' %} 2x,
-					             {% static 'images/off-42@3x.png' %} 3x"
-					     class="img-fluid">
-    			</div>
-    			<div class="col-md-6">
-    				<div class="section-content ">
-    					<h2 class="uppercase wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">IDEAS HAVE NO BOUNDARIES. <br/>WE HAVE NO LIMITS.</h2>
-    					<p  class="wow fadeInUp" data-wow-delay="0.75s" data-wow-duration="0.5s">
-    						Our wide range of expertise combined with honest approach strengthen our relationship with our clients. This fuels us to work harder to come up with products that exceed expectations.
-    					</p>
-    					<p  class="wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
-    						Combining our creative thinking and problem solving skills, we deliver the right solutions that would allow our clients to meet objectives and business requirements.
-    					</p>
-    					<a href="process.html" class="primary-link btn box wow fadeIn" data-speed="4"  data-wow-duration="0.5s" data-wow-delay="1.5s">
-							<span class="icon ion-ios-arrow-right"></span>
-							UNDERSTAND OUR  PROCESS
-						</a>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-    <div class="start-project-section">
-    	<div class="container">
-    		<div class="text-content ">
-    			<h3  class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">We also take immense pride on our dedication to our clients through swift response and exceptional customer service. With full enthusiasm, we seek to build solid long term relationship based on trust.</h3>
-    			<a href="contact.html" class="secondary-link wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
-					Start a project with us
-					<span class="icon ion-ios-arrow-right"></span>
-				</a>
-    		</div>
-			<img src="{% static 'images/logo-square.svg' %}"
-			     class="logo-square">
-    	</div>
-    </div>
-    <div class="about-team">
-    	<div class="container">
-    		<!-- Swiper -->
-		  	<div class="team-swiper swiper-container">
-			    <div class="swiper-wrapper">
-			      	<div class="swiper-slide d-flex align-items-center justify-content-between">
-			      		<img src="{% static 'images/earvin-1.png' %}"
-                             srcset="{% static 'images/earvin-1@2x.png' %} 2x,
-                                     {% static 'images/earvin-1@3x.png' %} 3x"
-                             class="earvin1">
-						<div class="member-info">
-							<h3>Earvin Gemenez</h3>
-							<h5 class="uppercase">CEO</h5>
-							<a href="#">
-								<span class="icon ion-social-twitter"></span>
-							</a>
-						</div>
-						<div>
-							<p class="qoute">
-								
-							</p>
-						</div>
-			      	</div>
-			      	<div class="swiper-slide d-flex align-items-center justify-content-between">
-			      		<img src="{% static 'images/ralph-1.png' %}"
-                             srcset="{% static 'images/ralph-1@2x.png' %} 2x,
-                                     {% static 'images/ralph-1@3x.png' %} 3x"
-                             class="ralph1">
-						<div class="member-info">
-							<h3>Ralph Leyga</h3>
-							<h5 class="uppercase">COO</h5>
-							<a href="#">
-								<span class="icon ion-social-twitter"></span>
-							</a>
-						</div>
-						<div>
-							<p class="qoute">
-								
-							</p>
-						</div>
-			      	</div>
-                    <div class="swiper-slide d-flex align-items-center justify-content-between">
-                        <img src="{% static 'images/manny-1.png' %}"
-                             srcset="{% static 'images/manny-1@2x.png' %} 2x,
-                                     {% static 'images/manny-1@3x.png' %} 3x"
-                             class="manny1">
-
-                        <div class="member-info">
-                            <h3>Manny Candidier</h3>
-                            <h5 class="uppercase">CTO</h5>
-                            <a href="#">
-                                <span class="icon ion-social-twitter"></span>
-                            </a>
+</section>
+<section class="">
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0001-earvin-1.jpg' %}"
+                                 srcset="{% static 'images/team/0001-earvin-1@2x.jpg' %} 2x,
+                                         {% static 'images/team/0001-earvin-1@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Earvin Gemenez</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">FOUNDER & CEO</p>
                         </div>
-                        <div>
-                            <p class="qoute">
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex align-items-center justify-content-between">
-                        <img src="{% static 'images/resty-2.png' %}"
-                             srcset="{% static 'images/resty-2@2x.png' %} 2x,
-                                     {% static 'images/resty-2@3x.png' %} 3x"
-                             class="resty2">
-
-                        <div class="member-info">
-                            <h3>Restie Antiquin</h3>
-                            <h5 class="uppercase">UI/UX Designer</h5>
-                            <a href="#">
-                                <span class="icon ion-social-twitter"></span>
-                            </a>
-                        </div>
-                        <div>
-                            <p class="qoute">
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex align-items-center justify-content-between">
-                        <img src="{% static 'images/kevin-3.png' %}"
-                             srcset="{% static 'images/kevin-3@2x.png' %} 2x,
-                                     {% static 'images/kevin-3@3x.png' %} 3x"
-                             class="kevin3">
-
-
-                        <div class="member-info">
-                            <h3>Kevin Kalis</h3>
-                            <h5 class="uppercase">Software Engineer</h5>
-                            <a href="#">
-                                <span class="icon ion-social-twitter"></span>
-                            </a>
-                        </div>
-                        <div>
-                            <p class="qoute">
-                                “Kevin is a trailblazer”   -kevin
-                            </p>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0000-earvin-2.jpg' %}"
+                                 srcset="{% static 'images/team/0000-earvin-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0000-earvin-2@3x.jpg' %} 3x"
+                             class="img-fluid">
                         </div>
                     </div>
                     
-                    <div class="swiper-slide d-flex align-items-center justify-content-between">
-                        <img src="{% static 'images/gong-3.png' %}"
-                             srcset="{% static 'images/gong-3@2x.png' %} 2x,
-                                     {% static 'images/gong-3@3x.png' %} 3x"
-                             class="gong3">
-
-                        <div class="member-info">
-                            <h3>Jerome Rumbaoa</h3>
-                            <h5 class="uppercase">Software Engineer</h5>
-                            <a href="#">
-                                <span class="icon ion-social-twitter"></span>
-                            </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0003-ralph-1.jpg' %}"
+                                 srcset="{% static 'images/team/0003-ralph-1@2x.jpg' %} 2x,
+                                         {% static 'images/team/0003-ralph-1@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Ralph Leyga</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">CO-FOUNDER & COO</p>
                         </div>
-                        <div>
-                            <p class="qoute">
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex align-items-center justify-content-between">
-                        <img src="{% static 'images/dudz-2.png' %}"
-                             srcset="{% static 'images/dudz-2@2x.png' %} 2x,
-                                     {% static 'images/dudz-2@3x.png' %} 3x"
-                             class="dudz2">
-
-                        <div class="member-info">
-                            <h3>Sanny Candidier</h3>
-                            <h5 class="uppercase">Software Engineer</h5>
-                            <a href="#">
-                                <span class="icon ion-social-twitter"></span>
-                            </a>
-                        </div>
-                        <div>
-                            <p class="qoute">
-                                
-                            </p>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0002-ralph-2.jpg' %}"
+                                 srcset="{% static 'images/team/0002-ralph-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0002-ralph-2@3x.jpg' %} 3x"
+                             class="img-fluid">
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex align-items-center justify-content-between">
-                        <img src="{% static 'images/sam-1.png' %}"
-                             srcset="{% static 'images/sam-1@2x.png' %} 2x,
-                                     {% static 'images/sam-1@3x.png' %} 3x"
-                             class="sam1">
-
-                        <div class="member-info">
-                            <h3>Sam Benemerito</h3>
-                            <h5 class="uppercase">Software Engineer</h5>
-                            <a href="#">
-                                <span class="icon ion-social-twitter"></span>
-                            </a>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center  wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/manny-1.jpg' %}"
+                                 srcset="{% static 'images/team/manny-1@2x.jpg' %} 2x,
+                                         {% static 'images/team/manny-1@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Manny Candidier</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">CO-FOUNDER & CTO</p>
                         </div>
-                        <div>
-                            <p class="qoute">
-                                
-                            </p>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/manny-1.jpg' %}"
+                                 srcset="{% static 'images/team/manny-1@2x.jpg' %} 2x,
+                                         {% static 'images/team/manny-1@3x.jpg' %} 3x"
+                             class="img-fluid">
                         </div>
                     </div>
-			      	<div class="swiper-slide d-flex align-items-center justify-content-between">
-			      		<img src="{% static 'images/king-1.png"
-                             srcset="{% static 'images/king-1@2x.png' %} 2x,
-                                     {% static 'images/king-1@3x.png' %} 3x"
-                             class="king1">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/dscf-1140.jpg' %}"
+                                 srcset="{% static 'images/team/dscf-1140@2x.jpg' %} 2x,
+                                         {% static 'images/team/dscf-1140@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Kevin Kalis</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">SOFTWARE ENGINEER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0019-kevin-2.jpg' %}"
+                                 srcset="{% static 'images/team/0019-kevin-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0019-kevin-2@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0005-resty-1.jpg' %}"
+                                 srcset="{% static 'images/team/0005-resty-1@2x.jpg' %} 2x,
+                                         {% static 'images/team/0005-resty-1@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Resty Antiquin</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">UI/UX DESIGNER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0004-resty-2.jpg' %}"
+                                 srcset="{% static 'images/team/0004-resty-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0004-resty-2@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0008-gong-3.jpg' %}"
+                                 srcset="{% static 'images/team/0008-gong-3@2x.jpg' %} 2x,
+                                         {% static 'images/team/0008-gong-3@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Jerome Rumbaoa</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">SOFTWARE ENGINEER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0009-gong-2.jpg' %}"
+                                 srcset="{% static 'images/team/0009-gong-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0009-gong-2@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0007-dudz-1.jpg' %}"
+                                 srcset="{% static 'images/team/0007-dudz-1@2x.jpg' %} 2x,
+                                         {% static 'images/team/0007-dudz-1@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Sanny Candidier</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">SOFTWARE ENGINEER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0006-dudz-2.jpg' %}"
+                                 srcset="{% static 'images/team/0006-dudz-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0006-dudz-2@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0028-kaka-2.jpg' %}"
+                                 srcset="{% static 'images/team/0028-kaka-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0028-kaka-2@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Angelica Tamayo</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">UI/UX DESIGNER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0026-kaka-4.jpg' %}"
+                                 srcset="{% static 'images/team/0026-kaka-4@2x.jpg' %} 2x,
+                                         {% static 'images/team/0026-kaka-4@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0032-cholo-3.jpg' %}"
+                                 srcset="{% static 'images/team/0032-cholo-3@2x.jpg' %} 2x,
+                                         {% static 'images/team/0032-cholo-3@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Pocholo Recto</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">SOFTWARE ENGINEER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0033-cholo-2.jpg' %}"
+                                 srcset="{% static 'images/team/0033-cholo-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0033-cholo-2@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0038-kyle-1.jpg' %}"
+                                 srcset="{% static 'images/team/0038-kyle-1@2x.jpg' %} 2x,
+                                         {% static 'images/team/0038-kyle-1@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Kyle Sun</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">SOFTWARE ENGINEER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0035-kyle-4.jpg' %}"
+                                 srcset="{% static 'images/team/0035-kyle-4@2x.jpg' %} 2x,
+                                         {% static 'images/team/0035-kyle-4@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0015-mae-2.jpg' %}"
+                                 srcset="{% static 'images/team/0015-mae-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0015-mae-2@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Mae Mendez</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">SOFTWARE ENGINEER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0014-mae-3.jpg' %}"
+                                 srcset="{% static 'images/team/0014-mae-3@2x.jpg' %} 2x,
+                                         {% static 'images/team/0014-mae-3@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/anton.jpg' %}"
+                                 srcset="{% static 'images/team/anton@2x.jpg' %} 2x,
+                                         {% static 'images/team/anton@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Anton Sison</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">SOFTWARE ENGINEER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0040-anton-2.jpg' %}"
+                                 srcset="{% static 'images/team/0040-anton-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0040-anton-2@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/dscf-1099.jpg' %}"
+                                 srcset="{% static 'images/team/dscf-1099@2x.jpg' %} 2x,
+                                         {% static 'images/team/dscf-1099@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Shem Ipanag</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">SOFTWARE ENGINEER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0030-shem-2.jpg' %}"
+                                 srcset="{% static 'images/team/0030-shem-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0030-shem-2@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0013-camille-1.jpg' %}"
+                                 srcset="{% static 'images/team/0013-camille-1@2x.jpg' %} 2x,
+                                         {% static 'images/team/0013-camille-1@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Camille Nulla</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">SOFTWARE ENGINEER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0012-camille-2.jpg' %}"
+                                 srcset="{% static 'images/team/0012-camille-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0012-camille-2@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/0024-mimi-1.jpg' %}"
+                                 srcset="{% static 'images/team/0024-mimi-1@2x.jpg' %} 2x,
+                                         {% static 'images/team/0024-mimi-1@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Kerstine Rodilla</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">Q.A TESTER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0021-mimi-4.jpg' %}"
+                                 srcset="{% static 'images/team/0021-mimi-4@2x.jpg' %} 2x,
+                                         {% static 'images/team/0021-mimi-4@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-4 text-center">
+                <div class="member-item text-center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                    <div class="img-wrapper mx-auto">
+                        <div class=" img1 member-img">
+                            <img src="{% static 'images/team/dscf-1150.jpg' %}"
+                                 srcset="{% static 'images/team/dscf-1150@2x.jpg' %} 2x,
+                                         {% static 'images/team/dscf-1150@3x.jpg' %} 3x"
+                             class="mb-4 img-fluid">
+                             <p class="h4 mb-2 text-dark-grey">Rochilita Boque</p>
+                    <p class="h6 text-spaced-1 text-slate-grey">SOFTWARE ENGINEER</p>
+                        </div>
+                        <div class="img2 member-img">
+                            <img src="{% static 'images/team/0017-letlet-2.jpg' %}"
+                                 srcset="{% static 'images/team/0017-letlet-2@2x.jpg' %} 2x,
+                                         {% static 'images/team/0017-letlet-2@3x.jpg' %} 3x"
+                             class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-						<div class="member-info">
-							<h3>King Rule</h3>
-							<h5 class="uppercase">Software Engineer</h5>
-							<a href="#">
-								<span class="icon ion-social-twitter"></span>
-							</a>
-						</div>
-						<div>
-							<p class="qoute">
-								
-							</p>
-						</div>
-			      	</div>
-			    </div>
-			    <!-- Add Scrollbar -->
-				<div class="swiper-scrollbar"></div>
-			    <!-- Add Arrows -->
-			    <div class="swiper-button-next"></div>
-		  	</div>
-    	</div>
     </div>
-    <div class="our-principles">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-6 offset-md-6">
-    				<div class="text-content text-right">
-    					<h3  class="wow fadeInUp" data-wow-delay="0s" data-wow-duration="0.5s">To ensure quality, we assume responsibility for the project throughout the entire process.</h3>
-    					<p  class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
-    						Believing that quality is the core of our work, we are taking one step at time by defining what actually matters to us.
-    					</p>
-    				</div>
-    			</div>
-    			<div class="col-md-6">
-    				<div class="section-content">
-    					<h3  class="wow fadeInUp" data-wow-delay="0.75s" data-wow-duration="0.5s">Our purpose</h3>
-        				<p  class="wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
-        					We design and develop applications that kick off the way people work, play and live. Our designers and strategists work closely to identify needs, design and define functionalities, determine timelines that would allow us to deal with any contingencies and deliver on time.
-        				</p>
-    				</div>
-    			</div>
-    			<div class="col-md-6">
-    				<div class="section-content">
-    					<h3  class="wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">Our mission</h3>
-    					<p  class="wow fadeInUp" data-wow-delay="1.25s" data-wow-duration="0.5s">
-        					We dream of a world where we can inspire more people to create greater solutions that would give everyone the capacity to solve more problems and make everyday life easier by the use of the technology, creativity and skills we have.
-        				</p>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+</section>
+<section class="bg-blocked mb-5">
+    <div class="container">
+         <div class="row mb-5">
+            <div class="col-md-5">
+                <h4 class="medium text-dark-grey mb-4 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">To ensure quality, we assume responsibility for the project throughout the entire process.</h4>
+                <div class="h-div mb-5 text-gunmetal  wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s"></div>
+                <p class=" wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.5s">Believing that quality is the core of our work, we are taking one step at time by defining what actually matters to us.</p>
+            </div>
+         </div>
+         <div class="row mt-5">
+            <div class="col-md-5">
+                <h4 class="medium text-dark-grey mb-2  wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.5s">Our purpose</h4>
+                <p class="text-gunmetal  wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">We design and develop applications that kick off the way people work, play and live. Our designers and strategists work closely to identify needs, design and define functionalities, determine timelines that would allow us to deal with any contingencies and deliver on time.</p>
+            </div>
+            <div class="col-md-5 offset-md-1">
+                <h4 class="medium text-dark-grey mb-2  wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.5s">Our mission</h4>
+                <p class="text-gunmetal  wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">We dream of a world where we can inspire more people to create greater solutions that would give everyone the capacity to solve more problems and make everyday life easier by the use of the technology, creativity and skills we have.</p>
+            </div>
+         </div>
     </div>
+</section>
 {% endblock %}

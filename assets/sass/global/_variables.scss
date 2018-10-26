@@ -1,52 +1,28 @@
 //typography variables
-
-$Sans-Italic: 'Sans-Italic';
 $Sans-Bold: 'Sans-Bold';
-$Sans-MediumItalic: 'Sans-MediumItalic';
-$Sans-Medium: 'Sans-Medium';
-$Sans-Regular: 'Sans-Regular';
 $Sans-BoldItalic: 'Sans-BoldItalic';
-
-
-$DINNextLTPro-LightCondensed: 'DINNextLTPro-LightCondensed';
-$DINNextLTPro-Light: 'DINNextLTPro-Light';
-$DINNextLTPro-Black: 'DINNextLTPro-Black';
-$DINNextLTPro-BlackItalic: 'DINNextLTPro-BlackItalic';
-$DINNextLTPro-Italic: 'DINNextLTPro-Italic';
-$DINNextLTPro-Bold: 'DINNextLTPro-Bold';
-$DINNextLTPro-HeavyCondensed: 'DINNextLTPro-HeavyCondensed';
-$DINNextLTPro-Medium: 'DINNextLTPro-Medium';
-$DINNextLTPro-Heavy: 'DINNextLTPro-Heavy';
-$DINNextLTPro-HeavyItalic: 'DINNextLTPro-HeavyItalic';
-$DINNextLTPro-BlackCondensed: 'DINNextLTPro-BlackCondensed';
-$DINNextLTPro-LightItalic: 'DINNextLTPro-LightItalic';
-$DINNextLTPro-Condensed: 'DINNextLTPro-Condensed';
-$DINNextLTPro-BoldItalic: 'DINNextLTPro-BoldItalic';
-$DINNextLTProz-BoldCondensed: "DINNextLTProz-BoldCondensed";
-
+$Sans-Italic: "Sans-Italic";
+$Sans-Medium: "Sans-Medium";
+$Sans-MediumItalic: "Sans-MediumItalic";
+$Sans-Regular: "Sans-Regular";
 //Primary colors
-$primary: #0edc87;
-$grey:#70797e;
+ $primary: #0edc87;
+$dark-grey: #0c1427;
+$gunmetal: #4a505f;
 $slate-grey:#5a6977;
-$black: #000000;
-$dark-grey: #1b1e26;
 
+$white: #ffffff;
 // Mood Colors
 
-$success: #45e0aa;
-$danger: #e04551;
-$warning: #ffde52;
-$info: #4a73fa;
-
-
 //secondary colors
-$white: #ffffff;
-$off-white:#f0f0f0;
+
+$ice-blue:#f6fbfa;
 
 
-//font-sizes:
+
+//type sizes
 $basefont: 16;
-$h1: #{56 / $basefont}rem;
+$h1: #{46 / $basefont}rem;
 $h2: #{36 / $basefont}rem;
 $h3: #{24 / $basefont}rem;
 $h4: #{20 / $basefont}rem;

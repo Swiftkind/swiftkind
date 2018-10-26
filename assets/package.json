@@ -9,16 +9,12 @@
   "author": "Restie Antiquin",
   "license": "ISC",
   "dependencies": {
-    "animejs": "^2.2.0",
     "bootstrap": "^4.0.0",
-    "hover.css": "^2.3.2",
+    "install": "^0.12.2",
     "ionicons": "^2.0.1",
     "jquery": "^3.3.1",
-    "particlesjs": "^2.2.2",
+    "npm": "^6.4.1",
     "popper.js": "^1.14.1",
-    "skrollr": "^0.6.26",
-    "swiper": "^4.3.3",
-    "three": "^0.95.0",
     "wowjs": "^1.1.3"
   }
 }

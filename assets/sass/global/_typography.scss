@@ -1,190 +1,47 @@
-html {
-    height: 100%;
+@font-face{
+	font-family: 'Sans-Bold';
+	src: url('../fonts/maax/Sans-Bold.ttf');
+	font-weight:normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Sans-BoldItalic';
+	src: url('../fonts/maax/Sans-BoldItalic.ttf');
+	font-weight:normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Sans-Italic';
+	src: url('../fonts/maax/Sans-Italic.ttf');
+	font-weight:normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Sans-Medium';
+	src: url('../fonts/maax/Sans-Medium.ttf');
+	font-weight:normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Sans-MediumItalic';
+	src: url('../fonts/maax/Sans-MediumItalic.ttf');
+	font-weight:normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Sans-Regular';
+	src: url('../fonts/maax/Sans-Regular.ttf');
+	font-weight:normal;
+	font-style: normal;
 }
 
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: #0D0F19;
-    color: #ffffff;
-    line-height: 1.5;
-    height: 100%;
-    overflow-x:hidden;
-
-    * {
-        -webkit-font-smoothing: antialiased;
-        moz-osx-font-smoothing: grayscale;
-        &:focus,
-        &:active {
-            outline: none;
-        }
-    }
+html,body{
+	font: normal normal 16px/1.5 'Sans-Regular', sans-serif;
+	height: 100%;
+	color:#4a505f;
+	line-height: 1.5;
 }
-
-@font-face {
-    font-family: 'DINNextLTPro-LightCondensed';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-LightCondensed.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale;
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-Light';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-Light.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-Black';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-Black.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-BlackItalic';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-BlackItalic.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-Italic';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-Italic.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-Bold';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-Bold.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-HeavyCondensed';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-HeavyCondensed.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-Medium';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-Medium.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-Heavy';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-Heavy.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-HeavyItalic';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-HeavyItalic.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-BlackCondensed';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-BlackCondensed.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-LightItalic';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-LightItalic.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-Condensed';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-Condensed.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTPro-BoldItalic';
-    src: url(../fonts/DINNextLTPro/DINNextLTPro-BoldItalic.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'DINNextLTProz-BoldCondensed';
-    src: url(../fonts/DINNextLTPro/DINNextLTProz-BoldCondensed.otf);
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'Sans-Italic';
-    src: url(../fonts/maax/Sans-Italic.ttf) format('truetype');
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'Sans-Bold';
-    src: url(../fonts/maax/Sans-Bold.ttf) format('truetype');
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'Sans-MediumItalic';
-    src: url(../fonts/maax/Sans-MediumItalic.ttf) format('truetype');
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'Sans-Medium';
-    src: url(../fonts/maax/Sans-Medium.ttf) format('truetype');
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'Sans-Regular';
-    src: url(../fonts/maax/Sans-Regular.ttf) format('truetype');
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
-}
-
-@font-face {
-    font-family: 'Sans-BoldItalic';
-    src: url(../fonts/maax/Sans-BoldItalic.ttf) format('truetype');
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    moz-osx-font-smoothing: grayscale
+main{
+	height: 100%;
+	display: initial;
 }

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 327">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:10px}.cls-2{stroke:#545e65}.cls-3{stroke:#84ffb4}.cls-4{filter:url(#Rectangle_396)}
+        </style>
+        <filter id="Rectangle_396" width="327" height="327" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="10"/>
+            <feGaussianBlur result="blur" stdDeviation="15"/>
+            <feFlood flood-color="#13416f" flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="development" transform="translate(-853 -629)">
+        <g class="cls-4" transform="translate(853 629)">
+            <rect id="Rectangle_396-2" width="237" height="237" class="cls-1" data-name="Rectangle 396" rx="20" transform="translate(45 35)"/>
+        </g>
+        <g id="Group_170" data-name="Group 170" transform="translate(945 742)">
+            <path id="Path_539" d="M44.212 22L9 46.47l35.212 22.679" class="cls-2" data-name="Path 539" transform="translate(0 -6.854)"/>
+            <path id="Path_540" d="M158 25l35.212 24.47L158 72.149" class="cls-2" data-name="Path 540" transform="translate(-60.074 -8.064)"/>
+            <path id="Line_37" d="M28.05 0L0 70.425" class="cls-3" data-name="Line 37" transform="translate(56.745 5)"/>
+        </g>
+    </g>
+</svg>

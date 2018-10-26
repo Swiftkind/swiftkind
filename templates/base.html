@@ -3,130 +3,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/hover.css/css/hover-min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/wowjs/css/libs/animate.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/swiper/dist/css/swiper.min.css' %}">
+    
+    <!-- PLUG IN -->
     <link rel="stylesheet" type="text/css" href="{% static 'node_modules/ionicons/css/ionicons.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/animate.css/animate.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'node_modules/bootstrap/dist/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
 
-
+    <!-- PLUG IN -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
     <title>Swiftkind</title>
 </head>
 <body>
-    <div class="page-wrapper">
-        <div id="mainNav">
-            <div class="container">
-                <nav class="navbar">
-                    <a href="{% url 'index' %}">
-                        <img src="{% static 'images/logo-2-white.png' %}"
-                             srcset="{% static 'images/logo-2-white@2x.png' %} 2x,
-                                     {% static 'images/logo-2-white@3x.png' %} 3x">
-                    </a>
-                    <a class="menuToggle">
-                        <span class="line top"></span>
-                        <span class="line middle"></span>
-                        <span class="line bottom"></span>
-                    </a>
-                </nav>
+    <nav class="main-nav position-fixed w-100 ">
+        <div class="container">
+            <div class="navbar navbar-expand-lg">
+                <a href="index.html" class="navbar-brand">
+                    <img src="{% static 'images/logo-dark.png' %}"
+                         srcset="{% static 'images/logo-dark@2x.png' %} 2x,
+                                 {% static 'images/logo-dark@3x.png' %} 3x"
+                         class="logo-dark">
+                </a>
+                 <div id="menu">
+                    <span class="top"></span>
+                    <span class="bottom"></span>
+                 </div>
+                 <div class="collapse navbar-collapse ml-4  " id="mainNavBar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="navbar-item  mx-4">
+                            <a href="about.html" >About us</a>
+                        </li>
+                        <li class="navbar-item mx-4">
+                            <a href="process.html">Our process</a>
+                        </li>
+                        <!-- <li class="navbar-item mx-4">
+                            <a href="">Projects</a>
+                        </li> -->
+                    </ul>
+                    <a href="contact.html" class="contact-cta">Talk to us</a>
+                 </div>
             </div>
         </div>
-        <div class="nav-menu">
-            <div class="container">
-                <div class="navigation-links">
-                    <a href="{% url 'index' %}" class="active">HOME</a>
-                    <a href="{% url 'process' %}">HOW</a>
-                    <a href="{% url 'about' %}">OUR STORY</a>
-                    <a href="{% url 'contact' %}">CONTACT</a>
-                </div>
-                <div class="nav-info">
-                    <div class="address">
-                        <h5 class="">SWIFTKIND HQ.</h5>
-                        <p class=""> Door 1, 3rd Floor, Consuelo Building,
-                            <br/>
-                            J.P. Laurel Avenue, Lanang, Davao City, 
-                            <br/>Philippines, 8000</p>
-                    </div>
-                    <div class="timer-wrapper">
-                        <div class="timer">
-                            <div class="time">
-                                <h2>72</h2>
-                                <p>HOURS</p>
-                            </div>
-                            <div class="time">
-                                <h2>36</h2>
-                                <p>MINUTES</p>
-                            </div>
-                            <div class="time">
-                                <h2>14</h2>
-                                <p>SECONDS</p>
-                            </div>
-                        </div>
-                        <p class="event-name">Before our <a href="#">‘Beer, Pizza & Code Talks!`</a> Friday</p>
-
-                    </div>
-                </div>
-                <a href="{% url 'contact' %}" class="contact-link">Let’s talk!</a>
-                <p class="hiring-link">Want to work with us? <a href="#">Join our team!</a></p>
-            </div>
-        </div>
-
+    </nav>
+    <aside class="sidebar">
+        <ul class="navbar-nav mr-auto">
+            <li class="navbar-item  mx-4">
+                <a href="index.html" >Home</a>
+            </li>
+            <li class="navbar-item  mx-4">
+                <a href="about.html" >About us</a>
+            </li>
+            <li class="navbar-item mx-4">
+                <a href="process.html">Our process</a>
+            </li>
+            <li class="navbar-item mx-4">
+                <a href="contact.html">Talk to us</a>
+            </li>
+        </ul>
+    </aside>
+    <main>
         {% block content %}{% endblock %}
-
-        <div class="footer">
-            <div class="connect">
-                <img src="{% static 'images/path-37.svg' %}" class="hex1 wow fadeI" data-wow-duration="0.5s" data-wow-delay="1s">
-                <img src="{% static 'images/path-37.svg' %}" class="hex2 wow fadeI" data-wow-duration="0.5s" data-wow-delay="1s">
-                <img src="{% static 'images/path-37.svg' %}" class="hex3 wow fadeI" data-wow-duration="0.5s" data-wow-delay="1s">
-                <img src="{% static 'images/path-37.svg' %}" class="hex4 wow fadeI" data-wow-duration="0.5s" data-wow-delay="1s">
-                <a href="contact.html" class="hvr-underline-from-center">Let’s talk about the future</a>
-                
+    </main>
+    <footer class="">
+        <div class="container">
+            <div class="contact-cta mx-auto  wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">
+                <div class="text-center">
+                    <h3 class="h2 medium text-slate-grey mb-4  wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.5s">let’s create something amazing!</h3>
+                    <p class="text-gunmetal  wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">Cliche typewriter stumptown, distillery small batch pok pok normcore crucifix twee. Af banh mi jean shorts, lyft prism vaporware mustache quinoa slow-carb disrupt 8-bit irony lo-fi.</p>
+                    <a href="contact.html" class="btn btn-cta mx-auto  wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.5s">Contact us</a>
+                </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4><a href="mailto:business@swiftkind.com?">business@swiftkind.com</a></h4>
-                        <p>
-                            Door 1, 3rd Floor, Consuelo Building, J.P. Laurel Avenue, Lanang, Davao City, Philippines, 8000
-                        </p>
-                        <p>(082) 225 - 1050</p>
+            <div class="row ">
+                <div class="col-md-4 my-2">
+                    <h4 class="text-dark-grey medium mb-4  wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">contact@swiftkind.com</h4>
+                    <p class=" wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.5s">Door 1, 3rd Floor, Consuelo Building, J.P. Laurel Avenue, Lanang, Davao City, Philippines, 8000</p>
+                    <p class=" wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">(082) 225 - 1050</p>
+                </div>
+                <div class="offset-md-1 col-md-4 my-2">
+                    <!-- <p class="text-dark-grey  wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">Job openings</p>
+                    <p class=" wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.5s">Junior Software Developer - <a href="#">Apply now!</a></p> -->
+                </div>
+                <div class="col-md-3  my-2">
+                    <div class="d-md-block d-none text-right">
+                        <p class=" wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">Follow us</p>
+                        <a href="https://github.com/swiftkind" class="d-block mb-4 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.5s">Github</a>
+                        <a href="https://www.behance.net/restyantiqc47e" class="d-block mb-4  wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">Behance</a>
+                        <a href="https://www.facebook.com/swiftkind/" class="d-block mb-4  wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.5s">Facebook</a>
                     </div>
-                    <div class="col-md-6">
-                        <p>Job openings</p>
-                        <p>Junior Software Developer <a href="#" class="text-muted">- Apply now!</a></p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>Follow us</p>
-                        <div class="connect-links">
-                            <a href="https://github.com/Swiftkind">Github</a>
-                            <a href="https://www.behance.net/restyantiqc47e">Behance</a>
-                            <a href="https://www.facebook.com/swiftkind/">Facebook</a>
-                        </div>
+                    <div class="d-block d-md-none text-left">
+                        <p class=" wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">Follow us</p>
+                        <a href="https://github.com/swiftkind" class="d-block mb-4 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.5s">Github</a>
+                        <a href="https://www.behance.net/restyantiqc47e" class="d-block mb-4  wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">Behance</a>
+                        <a href="https://www.facebook.com/swiftkind/" class="d-block mb-4  wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.5s">Facebook</a>
                     </div>
                 </div>
             </div>
-            <canvas class="particles-footer" ></canvas>
-            <div class="container text-center">
-                <small>Copyright Swiftkind 2018</small>
+            <hr class="position-relative mb-0">
+            <div class="text-center py-4">
+                <small class="position-relative text-muted  wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">Copyright Swiftkind 2018</small>
             </div>
+
         </div>
-        
-    </div>
-    <script type="text/javascript" src="{% static 'node_modules/animejs/anime.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'node_modules/skrollr/dist/skrollr.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'node_modules/particlesjs/dist/particles.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'node_modules/wowjs/dist/wow.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'node_modules/swiper/dist/js/swiper.min.js' %}"></script>
+    </footer>
+    
     <script type="text/javascript" src="{% static 'node_modules/jquery/dist/jquery.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jquery-inertia-scroll/jquery-inertiaScroll.js' %}"></script>
     <script type="text/javascript" src="{% static 'node_modules/popper.js/dist/umd/popper.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'node_modules/wowjs/dist/wow.min.js' %}"></script>
 
     <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 </body>

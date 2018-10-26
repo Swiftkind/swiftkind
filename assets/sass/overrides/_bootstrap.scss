@@ -1,0 +1,34 @@
+
+@each $prop, $abbrev in (width: w, height: h) {
+  @each $bpname,$bpsize in $grid-breakpoints {
+    @media (min-width: $bpsize) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}-#{$bpname}-#{$size} { 
+          #{$prop}: $length; 
+        }
+      }
+    }
+  }
+}
+
+.btn-primary{
+	color: #fff;
+    background-color: #0edc87;
+    border-color: #0edc87;
+    &:hover, &:active, &:focus{
+    	background-color:#13bd77 !important;
+    	border-color:#13bd77 !important;
+    	outline:none;
+    	&:active, &:focus{
+    	background-color:#13bd77;
+    	border-color:#13bd77;
+    	outline:none;}
+    }
+
+}
+
+.btn{
+	&:focus{
+		box-shadow:none;
+	}
+}

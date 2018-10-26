@@ -1,22 +1,28 @@
+// overrides
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/grid";
+@import 'overrides/bootstrap';
+@import 'overrides/animations';
+
 //global
+
 @import 'global/typography';
 @import 'global/variables';
 @import 'global/mixins';
 @import 'global/utils';
 
+
 //partials
-@import 'partials/header';
-@import 'partials/swiper';
-@import 'partials/icons';
-@import 'partials/animations';
-@import 'partials/sections';
-@import 'partials/forms';
+
+
+@import 'partials/nav';
 @import 'partials/footer';
 
 //pages
-@import 'pages/intro';
+
 @import 'pages/homepage';
 @import 'pages/about';
 @import 'pages/process';
 @import 'pages/contact';
-@import 'pages/services';

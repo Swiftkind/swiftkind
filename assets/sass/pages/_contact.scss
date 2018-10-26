@@ -1,20 +1,139 @@
-.contact-masthead {
-    height: 100%;
-    max-height: 100%;
-    position: relative;
-    @include flexbox();
-    @include align-items(center);
-    .address {
-        p {
-            marbin-bottom: 0;
-            max-width: 80%;
-            
+.contact-img {
+    @include mobile {
+        margin: 2rem auto 0;
+        max-width: 75%;
+
+    }
+}
+
+.drop-line {
+    letter-spacing: 1px;
+    color: $gunmetal;
+    z-index: 11;
+    display: block;
+
+    span {
+        border: solid 1px $gunmetal;
+        padding: 1rem;
+        width: 40px;
+        height: 40px;
+        @include transition(all ease 0.3s);
+
+    }
+
+    &:hover {
+        color: $gunmetal;
+
+        span {
+            @include transition(all ease 0.3s);
+            background: $gunmetal;
+            color: $primary;
         }
     }
-    .line {
-        height: 6rem;
-        border-bottom: solid 2px $white;
-        display: block;
-        width: 100%;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.contact-form {
+
+    input,
+    textarea {
+        border: none;
+        border-bottom: solid 1px $slate-grey;
+        border-radius: 0px;
+        @include transition(all ease 0.3s);
+
+        &:focus {
+            border-color: $primary;
+            @include transition(all ease 0.3s);
+            box-shadow: none;
+
+        }
+    }
+
+    .form-check{
+        label{
+            margin-left: 1rem;
+            margin-bottom:0;
+            color: $dark-grey;
+        }
+    }
+     [type="checkbox"]{
+        position: relative;
+
+        margin-top: -0.5rem;
+     }
+
+    [type="checkbox"]:not(:checked),[type="checkbox"]:checked {
+        &:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            border: solid 1px #707070;
+            display: block;
+            background-color: $white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: -3px;
+        }
+    }
+    [type="checkbox"]:not(:checked) {
+        &:after {
+            content: "";
+            width: 12px;
+            height: 12px;
+
+            display: block;
+            background: $white;
+            top:1px;
+            position: absolute;
+            left: 4px;
+            right: 4px;
+            margin: 0 auto;
+            @include transition(background 0.3s ease);
+        }
+    }
+    [type="checkbox"]:checked {
+        &:after {
+            content: "";
+            width: 12px;
+            height: 12px;
+
+            display: block;
+            background: $primary;
+            top:1px;
+            position: absolute;
+            left: 4px;
+            right: 4px;
+            margin: 0 auto;
+            @include transition(background 0.3s ease);
+        }
+    }
+
+}
+
+.btn-submit {
+    width: 252px;
+    height: 49px;
+    border: solid 1px $primary;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    text-tranform: uppercase;
+    color: $white;
+    line-height: 2.4;
+    letter-spacing: 1px;
+    background: transparent;
+    @include transition(all ease 0.3s);
+    background: $primary;
+
+    &:hover {
+        background: darken($primary, 5%);
+        @include transition(all ease 0.3s);
+
     }
 }

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 327">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2,.cls-3,.cls-4{fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5px}.cls-2{stroke:#84ffb4}.cls-3{stroke:#545e65}.cls-4{stroke:#c2c9ce}.cls-5{fill:#545e65}.cls-6{fill:#97fdca}.cls-7{filter:url(#Rectangle_397)}
+        </style>
+        <filter id="Rectangle_397" width="327" height="327" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="10"/>
+            <feGaussianBlur result="blur" stdDeviation="15"/>
+            <feFlood flood-color="#13416f" flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="maintainance" transform="translate(-1905 -120)">
+        <g class="cls-7" transform="translate(1905 120)">
+            <rect id="Rectangle_397-2" width="237" height="237" class="cls-1" data-name="Rectangle 397" rx="20" transform="translate(45 35)"/>
+        </g>
+        <g id="Group_171" data-name="Group 171" transform="translate(2002.795 246.844)">
+            <path id="Path_539" d="M29.243 22L9 36.067 29.243 49.1" class="cls-2" data-name="Path 539" transform="translate(0 -11.167)"/>
+            <path id="Path_540" d="M158 25l20.243 14.067L158 52.1" class="cls-3" data-name="Path 540" transform="translate(-97.879 -13.138)"/>
+            <path id="Line_37" d="M16.126 0L0 40.485" class="cls-4" data-name="Line 37" transform="translate(36.448 5)"/>
+            <circle id="Ellipse_297" cx="4" cy="4" r="4" class="cls-5" data-name="Ellipse 297" transform="rotate(-1 1864.977 -4933.07)"/>
+            <circle id="Ellipse_298" cx="4" cy="4" r="4" class="cls-6" data-name="Ellipse 298" transform="rotate(-1 1857.996 -5735.199)"/>
+            <circle id="Ellipse_299" cx="4" cy="4" r="4" class="cls-5" data-name="Ellipse 299" transform="rotate(-1 1850.958 -6537.327)"/>
+        </g>
+    </g>
+</svg>

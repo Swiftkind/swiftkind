@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 422.183">
+    <defs>
+        <style>
+            .cls-1,.cls-5{fill:#fff}.cls-2,.cls-3{fill:#84ffb4}.cls-3{font-size:20px;font-family:FontAwesome5ProRegular,&quot;Font Awesome 5 Pro&quot;}.cls-4{fill:#545e65}.cls-5{stroke:#545e65;stroke-width:3px}.cls-6{fill:#c2c9ce}.cls-7{stroke:none}.cls-8{fill:none}.cls-9{filter:url(#Rectangle_371)}
+        </style>
+        <filter id="Rectangle_371" width="327" height="422.183" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="10"/>
+            <feGaussianBlur result="blur" stdDeviation="15"/>
+            <feFlood flood-color="#13416f" flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="strategy" transform="translate(-487 -120)">
+        <g class="cls-9" transform="translate(487 120)">
+            <rect id="Rectangle_371-2" width="237" height="332.183" class="cls-1" data-name="Rectangle 371" rx="20" transform="translate(45 35)"/>
+        </g>
+        <g id="Group_184" data-name="Group 184" transform="translate(588 260.591)">
+            <rect id="Rectangle_373" width="81" height="6" class="cls-2" data-name="Rectangle 373" rx="3" transform="translate(45 10)"/>
+            <text id="Check" class="cls-3" transform="translate(0 18)">
+                <tspan x="0" y="0">Check</tspan>
+            </text>
+            <g id="Group_177" data-name="Group 177" transform="translate(2 35)">
+                <rect id="Rectangle_374" width="81" height="6" class="cls-4" data-name="Rectangle 374" rx="3" transform="translate(43 5)"/>
+                <g id="Rectangle_375" class="cls-5" data-name="Rectangle 375">
+                    <path d="M0 0h16v16H0z" class="cls-7"/>
+                    <path d="M1.5 1.5h13v13h-13z" class="cls-8"/>
+                </g>
+            </g>
+            <g id="Group_178" data-name="Group 178" transform="translate(2 58)">
+                <rect id="Rectangle_374-2" width="81" height="6" class="cls-6" data-name="Rectangle 374" rx="3" transform="translate(43 5)"/>
+                <g id="Rectangle_375-2" class="cls-5" data-name="Rectangle 375">
+                    <path d="M0 0h16v16H0z" class="cls-7"/>
+                    <path d="M1.5 1.5h13v13h-13z" class="cls-8"/>
+                </g>
+            </g>
+            <g id="Group_179" data-name="Group 179" transform="translate(2 82)">
+                <rect id="Rectangle_374-3" width="81" height="6" class="cls-4" data-name="Rectangle 374" rx="3" transform="translate(43 5)"/>
+                <g id="Rectangle_375-3" class="cls-5" data-name="Rectangle 375">
+                    <path d="M0 0h16v16H0z" class="cls-7"/>
+                    <path d="M1.5 1.5h13v13h-13z" class="cls-8"/>
+                </g>
+            </g>
+            <g id="Group_180" data-name="Group 180" transform="translate(2 105)">
+                <rect id="Rectangle_374-4" width="81" height="6" class="cls-6" data-name="Rectangle 374" rx="3" transform="translate(43 5)"/>
+                <g id="Rectangle_375-4" class="cls-5" data-name="Rectangle 375">
+                    <path d="M0 0h16v16H0z" class="cls-7"/>
+                    <path d="M1.5 1.5h13v13h-13z" class="cls-8"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

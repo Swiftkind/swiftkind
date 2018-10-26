@@ -1,0 +1,141 @@
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 10%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 10%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes pd-fadeInUp {
+    from {
+        opacity: 0.5;
+        -webkit-transform: translate(277 100);
+        transform: translate(277 100);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate(277 280);
+        transform: translate(277 280);
+    }
+}
+
+@keyframes pd-fadeInUp  {
+    from {
+        opacity: 0.5;
+        -webkit-transform: translate(277 100);
+        transform: translate(277 100);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate(277 280);
+        transform: translate(277 280);
+    }
+}
+
+
+
+
+//process diagram
+
+#inquiry{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay:0.5s;
+    opacity:1;
+
+}
+
+#strategy{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay: 1.6s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+
+#design{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay: 4.8s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+
+#development{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay: 4.8s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+#integration{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay: 5s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+#ship{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay: 7.4s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+
+#Maintenance-2{
+    animation: pd-fadeInUp 0.2s ease;
+    animation-delay: 10s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+.green-line{
+     stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation: dash 10s linear forwards;
+  animation-delay: 1s;
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.path-from{
+     stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation: dash 7s linear forwards;
+  animation-delay: 3.55s;
+}
+
+.path-to{
+     stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation: dash 5s linear forwards;
+  animation-delay: 5s;
+}

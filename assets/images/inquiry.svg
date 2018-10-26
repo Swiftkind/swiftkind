@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 327">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{fill:#84ffb4}.cls-3{fill:#545e65}.cls-4{filter:url(#Rectangle_372)}
+        </style>
+        <filter id="Rectangle_372" width="327" height="327" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="10"/>
+            <feGaussianBlur result="blur" stdDeviation="15"/>
+            <feFlood flood-color="#13416f" flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="inquiry" transform="translate(-115 -120)">
+        <g class="cls-4" transform="translate(115 120)">
+            <rect id="Rectangle_372-2" width="237" height="237" class="cls-1" data-name="Rectangle 372" rx="20" transform="translate(45 35)"/>
+        </g>
+        <g id="Group_166" data-name="Group 166" transform="translate(207 220)">
+            <path id="Path_530" d="M43 114a49.7 49.7 0 0 1 99.4 0" class="cls-2" data-name="Path 530"/>
+            <circle id="Ellipse_294" cx="24.4" cy="24.4" r="24.4" class="cls-2" data-name="Ellipse 294" transform="translate(68.3 10)"/>
+            <path id="Path_531" d="M0 115a55 55 0 0 1 110 0" class="cls-3" data-name="Path 531"/>
+            <circle id="Ellipse_295" cx="27" cy="27" r="27" class="cls-3" data-name="Ellipse 295" transform="translate(28)"/>
+        </g>
+    </g>
+</svg>

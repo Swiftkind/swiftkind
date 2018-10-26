@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 74">
+    <defs>
+        <style>
+            .cls-1{fill:#26c2f0}.cls-2,.cls-3{fill:#fff;stroke:#26c2f0;stroke-miterlimit:10}.cls-3{fill:none;stroke-width:5px}
+        </style>
+    </defs>
+    <g id="strat-icon" transform="translate(-93.9)">
+        <path id="Path_607" d="M139.7 51h-16.6a2.22 2.22 0 0 1-2.2-2.2V26.2a2.22 2.22 0 0 1 2.2-2.2h16.6a2.22 2.22 0 0 1 2.2 2.2v22.6a2.22 2.22 0 0 1-2.2 2.2z" class="cls-1" data-name="Path 607"/>
+        <path id="Path_608" d="M138.9 29h-14.5a1.11 1.11 0 0 1-1.1-1.1v-6.2a1.11 1.11 0 0 1 1.1-1.1h14.5a1.11 1.11 0 0 1 1.1 1.1V28a1.028 1.028 0 0 1-1.1 1z" class="cls-2" data-name="Path 608"/>
+        <circle id="Ellipse_314" cx="34.5" cy="34.5" r="34.5" class="cls-3" data-name="Ellipse 314" transform="translate(96.4 2.5)"/>
+    </g>
+</svg>

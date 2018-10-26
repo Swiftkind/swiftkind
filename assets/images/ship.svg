@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 419">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{fill:#545e65}.cls-3{fill:#c2c9ce}.cls-4{fill:#84ffb4}.cls-5{filter:url(#Rectangle_380)}.cls-6{filter:url(#Rectangle_379)}.cls-7{filter:url(#Rectangle_377)}
+        </style>
+        <filter id="Rectangle_377" width="327" height="419" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="10"/>
+            <feGaussianBlur result="blur" stdDeviation="15"/>
+            <feFlood flood-color="#13416f" flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Rectangle_379" width="96.625" height="154.282" x="82" y="125" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Rectangle_380" width="67.795" height="104.487" x="177.66" y="174.795" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-3" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="ship" transform="translate(-1553 -124)">
+        <g class="cls-7" transform="translate(1553 124)">
+            <rect id="Rectangle_377-2" width="237" height="329" class="cls-1" data-name="Rectangle 377" rx="20" transform="translate(45 35)"/>
+        </g>
+        <g id="Group_187" data-name="Group 187" transform="translate(.228 45.141)">
+            <g id="Group_169" data-name="Group 169" transform="translate(1643.772 209.859)">
+                <g class="cls-6" transform="translate(-91 -131)">
+                    <rect id="Rectangle_379-2" width="78.624" height="136.282" class="cls-1" data-name="Rectangle 379" rx="11" transform="translate(91 131)"/>
+                </g>
+                <g class="cls-5" transform="translate(-91 -131)">
+                    <rect id="Rectangle_380-2" width="49.795" height="86.487" class="cls-1" data-name="Rectangle 380" rx="8" transform="translate(186.66 180.8)"/>
+                </g>
+                <path id="Rectangle_382" d="M0 0h49.795v9.173H0z" class="cls-2" data-name="Rectangle 382" transform="translate(14.414 83.866)"/>
+                <path id="Rectangle_383" d="M0 0h49.795v9.173H0z" class="cls-3" data-name="Rectangle 383" transform="translate(14.414 100.901)"/>
+                <circle id="Ellipse_296" cx="12.449" cy="12.449" r="12.449" class="cls-4" data-name="Ellipse 296" transform="translate(27.519 31.45)"/>
+            </g>
+            <path id="Rectangle_384" d="M0 0h1.31v24.898H0z" class="cls-2" data-name="Rectangle 384" transform="translate(1745.984 295.035)"/>
+            <path id="Rectangle_388" d="M0 0h1.31v24.898H0z" class="cls-2" data-name="Rectangle 388" transform="translate(1761.709 295.035)"/>
+            <path id="Rectangle_385" d="M0 0h1.31v30.139H0z" class="cls-3" data-name="Rectangle 385" transform="translate(1749.915 289.794)"/>
+            <path id="Rectangle_389" d="M0 0h1.31v30.139H0z" class="cls-3" data-name="Rectangle 389" transform="translate(1765.64 289.794)"/>
+            <path id="Rectangle_394" d="M0 0h1.31v30.139H0z" class="cls-2" data-name="Rectangle 394" transform="translate(1777.434 289.794)"/>
+            <path id="Rectangle_386" d="M0 0h1.31v15.725H0z" class="cls-2" data-name="Rectangle 386" transform="translate(1753.847 304.208)"/>
+            <path id="Rectangle_390" d="M0 0h1.31v15.725H0z" class="cls-2" data-name="Rectangle 390" transform="translate(1769.571 304.208)"/>
+            <path id="Rectangle_393" d="M0 0h1.31v15.725H0z" class="cls-3" data-name="Rectangle 393" transform="translate(1781.365 304.208)"/>
+            <path id="Rectangle_387" d="M0 0h1.31v22.277H0z" class="cls-3" data-name="Rectangle 387" transform="translate(1757.778 297.656)"/>
+            <path id="Rectangle_391" d="M0 0h1.31v22.277H0z" class="cls-3" data-name="Rectangle 391" transform="translate(1773.503 297.656)"/>
+            <path id="Rectangle_395" d="M0 0h36.691v5.242H0z" class="cls-4" data-name="Rectangle 395" transform="translate(1745.984 276.69)"/>
+        </g>
+    </g>
+</svg>

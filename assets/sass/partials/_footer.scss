@@ -1,102 +1,71 @@
-.footer {
+footer {
     position: relative;
-    padding-bottom: 80px;
-    .footer-brand {
-        font-family: $DINNextLTPro-Light;
-        letter-spacing: 10px;
-        z-index: 2;
-        position: relative;
-    }
-    small {
-        font-size: $small;
-        color: $grey;
-        z-index: 2;
-        position: relative;
-    }
-    h4 {
-        margin-bottom: 1rem;
-        z-index: 2;
-        position: relative;
-    }
-    p {
-        font-size: $h6;
-        z-index: 2;
-        position: relative;
-    }
-    .text-muted {
-        &:hover {
-            color: $primary !important;
-            transition: 0.2s ease;
-        }
-    }
-    img {
-        width: 1rem;
-        z-index: 2;
+    margin-top: 100px;
+
+    .text-center {
+        z-index: 1;
         position: relative;
     }
 
-    .connect-links {
-        @include flexbox();
-        @include flex-direction(column);
-        @include justify-content(space-between);
-        a {
-            color: $primary;
-            margin-bottom: 1rem;
-        }
-    }
-
-    .connect {
+    .contact-cta {
+        max-width: 923px;
+        height: 412px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px 0 rgba(160, 195, 198, 0.16);
+        background-color: #ffffff;
+        padding: 3.75rem;
         position: relative;
-        .hex1 {
-            position: absolute;
-            bottom: 473px;
-            width: 176.1px;
-            height: 190.8px;
-            right: 0;
-        }
-        .hex2 {
-            position: absolute;
-            width: 87.8px;
-            height: 92.2px;
-            right: 357px;
-            bottom: 363px;
-        }
-        .hex3 {
-            position: absolute;
-            width: 128.4px;
-            height: 229.7px;
-            right: 59px;
-            bottom: 370px;
-        }
-        .hex4 {
-            position: absolute;
-            width: 67.6px;
-            height: 68.3px;
-            right: 211px;
-            bottom: 374px;
-        }
-        height: 400px;
-        @include flexbox();
-        @include align-items(center);
-        @include justify-content(center);
-        a {
-            font-size: $h2;
-            font-family: $DINNextLTPro-Light;
-            color: $white;
-            position: relative;
-            z-index: 1;
-            &:after {
-                content: "";
-                background-color: $white;
-                width: 6rem;
-                height: 0.1rem;
-                display: block;
-                margin: 0.2rem auto;
+        margin-bottom: 6.125rem;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 219.2px;
+
+            background: {
+                image: url('../images/path-53.svg');
+                size: cover;
+
             }
+
+            position:absolute;
+            bottom:0;
+            left:0;
+            z-index: 0;
+        }
+
+        @include mobile {
+            padding: 1rem;
         }
     }
-    .particles-footer {
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 653px;
+        background-color: #f8feff;
+        position: absolute;
         bottom: 0;
-        z-index: 0;
+        left: 0;
+        display: block;
+    }
+}
+
+.btn-cta {
+    width: 207px;
+    height: 51px;
+    border-radius: 6px;
+    background: $primary;
+    color: $white !important;
+    box-shadow: 0 3px 10px 0 rgba(3, 65, 48, 0.16);
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+        @include transition(all ease 0.5s);
+    &:hover{
+        background: darken($primary, 5%);
+            @include transition(all ease 0.5s);
+            color: $white !important;
     }
 }
