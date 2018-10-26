@@ -1,6 +1,127 @@
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1871 892">
     <defs>
         <style>
+
+
+@-webkit-keyframes pd-fadeInUp {
+    from {
+        opacity: 0.5;
+        -webkit-transform: translate(277 100);
+        transform: translate(277 100);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate(277 280);
+        transform: translate(277 280);
+    }
+}
+
+@keyframes pd-fadeInUp  {
+    from {
+        opacity: 0.5;
+        -webkit-transform: translate(277 100);
+        transform: translate(277 100);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate(277 280);
+        transform: translate(277 280);
+    }
+}
+
+
+tspan{
+    font-family: sans-serif;
+    font-weight:bold;
+}
+
+
+//process diagram
+
+#inquiry{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay:0.5s;
+    opacity:1;
+
+}
+
+#strategy{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay: 1.6s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+
+#design{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay: 4.8s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+
+#development{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay: 4.8s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+#integration{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay: 5s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+#ship{
+    animation: pd-fadeInUp 0.2s ease-in;
+    animation-delay: 7.4s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+
+#Maintenance-2{
+    animation: pd-fadeInUp 0.2s ease;
+    animation-delay: 10s;
+    opacity:0.4;
+    animation-fill-mode: forwards;
+
+}
+.green-line{
+     stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation: dash 10s linear forwards;
+  animation-delay: 1s;
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.path-from{
+     stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation: dash 7s linear forwards;
+  animation-delay: 3.55s;
+}
+
+.path-to{
+     stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation: dash 5s linear forwards;
+  animation-delay: 5s;
+}
+    
             .cls-1,.cls-12,.cls-14,.cls-2,.cls-8,.cls-9{fill:none}.cls-1{stroke:#c2c9ce}.cls-1,.cls-2,.cls-8,.cls-9{stroke-miterlimit:10;stroke-width:10px}.cls-2{stroke:#b4ffd1}.cls-11,.cls-3{fill:#fff}.cls-4{fill:#84ffb4}.cls-10,.cls-5,.cls-7{fill:#545e65}.cls-6{fill:#c2c9ce}.cls-7{font-size:20px;font-family:Maax-Medium,Maax;font-weight:500}.cls-10,.cls-11,.cls-8{stroke:#545e65}.cls-8,.cls-9{stroke-linecap:round}.cls-12,.cls-9{stroke:#84ffb4}.cls-10,.cls-11{stroke-width:3px}.cls-12{stroke-width:5px}.cls-13{stroke:none}.cls-15{filter:url(#Rectangle_397)}.cls-16{filter:url(#Rectangle_378)}.cls-17{filter:url(#Rectangle_380)}.cls-18{filter:url(#Rectangle_379)}.cls-19{filter:url(#Rectangle_377)}.cls-20{filter:url(#Rectangle_371)}.cls-21{filter:url(#Rectangle_372)}.cls-22{filter:url(#Rectangle_396)}.cls-23{filter:url(#Rectangle_376)}
         </style>
         <filter id="Rectangle_376" width="327" height="327" x="612" y="21" filterUnits="userSpaceOnUse">
@@ -69,12 +190,12 @@
     </defs>
     <g id="process-diagram" transform="translate(-392 -107)">
         <g id="Group_196" data-name="Group 196" transform="translate(1003 387)">
-            <path id="Path_581" d="M-13.919 150H128.2c15.9 0 28.8 12.9 28.8 38.8v134.284" class="cls-1" data-name="Path 581" transform="translate(0 10)"/>
-            <path id="Path_583" d="M-21.4 143.3h149.6c15.9 0 28.8-12.9 28.8-38.8V0" class="cls-1" data-name="Path 583"/>
-            <path id="Path_623" d="M.5-59.764V83.2A23.793 23.793 0 0 0 24.3 107h148.045" class="cls-1" data-name="Path 623" transform="translate(173.5 36)"/>
-            <path id="Path_624" d="M.5 292.047V134.8A23.793 23.793 0 0 1 24.3 111h143.713" class="cls-1" data-name="Path 624" transform="translate(173.5 51)"/>
+            <path id="Path_581" d="M-13.919 150H128.2c15.9 0 28.8 12.9 28.8 38.8v134.284" class="cls-1 path-from" data-name="Path 581" transform="translate(0 10)"/>
+            <path id="Path_583" d="M-21.4 143.3h149.6c15.9 0 28.8-12.9 28.8-38.8V0" class="cls-1 path-from" data-name="Path 583"/>
+            <path id="Path_623" d="M.5-59.764V83.2A23.793 23.793 0 0 0 24.3 107h148.045" class="cls-1 path-to" data-name="Path 623" transform="translate(173.5 36)"/>
+            <path id="Path_624" d="M.5 292.047V134.8A23.793 23.793 0 0 1 24.3 111h143.713" class="cls-1 path-to" data-name="Path 624" transform="translate(173.5 51)"/>
         </g>
-        <path id="Path_566" d="M-57-60.445H987.977c168.842 0 305.742.766 305.742 1.71v5.817" class="cls-2" data-name="Path 566" transform="translate(703.315 600.445)"/>
+        <path id="Path_566" d="M-57-60.445H987.977c168.842 0 305.742.766 305.742 1.71v5.817" class="cls-2 green-line" data-name="Path 566" transform="translate(703.315 600.445)"/>
         <g id="design" transform="translate(150 4)">
             <g class="cls-23" transform="translate(242 103)">
                 <rect id="Rectangle_376-2" width="237" height="237" class="cls-3" data-name="Rectangle 376" rx="20" transform="translate(657 56)"/>
