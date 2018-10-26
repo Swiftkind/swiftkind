@@ -34,7 +34,7 @@
         }
     &.nav-fixed-top {
         position: fixed;
-      
+        margin-top: 0;
         background: rgba($white, 1);
         box-shadow: 0 3px 6px 0 rgba(232, 232, 232, 0.16);
         @include transition(all ease 0.5s);
@@ -161,6 +161,7 @@
         @include align-items(center);
         background: $dark-grey;
         text-align: right;
+        transition-delay:0.2s;
         @include mobile{
         	width: 100%;
         	@include justify-content(center);
@@ -171,7 +172,7 @@
         }
 
     }
-    .position-fixed{
+    .nav-fixed-top{
     	background: rgba($white, 0);
     	box-shadow:none;
     	#menu{

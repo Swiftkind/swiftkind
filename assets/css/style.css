@@ -1801,6 +1801,7 @@ a {
 /* line 35, ../sass/partials/_nav.scss */
 .main-nav.nav-fixed-top {
   position: fixed;
+  margin-top: 0;
   background: white;
   box-shadow: 0 3px 6px 0 rgba(232, 232, 232, 0.16);
   -moz-transition: all ease 0.5s;
@@ -1973,6 +1974,7 @@ a {
   align-items: center;
   background: #0c1427;
   text-align: right;
+  transition-delay: 0.2s;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 151, ../sass/partials/_nav.scss */
@@ -1985,18 +1987,18 @@ a {
     -ms-flex-pack: center;
     text-align: center;
   }
-  /* line 168, ../sass/partials/_nav.scss */
+  /* line 169, ../sass/partials/_nav.scss */
   .side-open .sidebar ul {
     padding: 0;
   }
 }
-/* line 174, ../sass/partials/_nav.scss */
-.side-open .position-fixed {
+/* line 175, ../sass/partials/_nav.scss */
+.side-open .nav-fixed-top {
   background: rgba(255, 255, 255, 0);
   box-shadow: none;
 }
-/* line 177, ../sass/partials/_nav.scss */
-.side-open .position-fixed #menu {
+/* line 178, ../sass/partials/_nav.scss */
+.side-open .nav-fixed-top #menu {
   margin-top: 1rem;
 }
 
