@@ -2,23 +2,23 @@
 {% load static %}
 
 {% block content %}
-<section class="h-sm-75 h-xs-100 d-flex align-items-center">
+<section class="h-100 d-flex align-items-center">
+    <div class="container">
+        <div class="team-group" style="background-image: url('{% static 'images/team//DSCF1165.jpg' %}');">
+        
+    </div>
+    </div>
+</section>
+<section class="py-5">
     <div class="container">
         <div class="w-sm-75 w-xs-100 mx-auto text-center mt-5">
             <h2 class="medium text-dark-grey  wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">People behind Swiftkind</h2>
             <div class="h-div mx-auto   wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s"></div>
-            <p class="text-gunmetal   wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.5s">A small team of keen, specialized and diverse people believing that our works could improve people’s daily lives. Fueled by our passion for our work, we pursue learning to keep up with the best practices and industry standards.</p>
+            <p class="text-gunmetal   wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.5s">A small team of keen, specialized and diverse people believing that our works could improve people’s daily lives. Fuelled by our passion for our work, we pursue learning to keep up with the best practices and industry standards.</p>
         </div>
     </div>
 </section>
-<section class="">
-    <div class="container text-center">
-        <img src="{% static 'images/dscf-1165.jpg' %}"
-             srcset="{% static 'images/dscf-1165@2x.jpg' %} 2x,
-                     {% static 'images/dscf-1165@3x.jpg' %} 3x"
-             class="DSCF1165 mx-auto img-fluid   wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
-    </div>
-</section>
+
 <section class="h-50 pt-5 d-flex align-items-center">
     <div class="container pt-5">
         <div class="w-sm-75">
@@ -42,7 +42,7 @@
                 <p class="mb-5   wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
                     Combining our creative thinking and problem solving skills, we deliver the right solutions that would allow our clients to meet objectives and business requirements.
                 </p>
-                <a href="process.html" class="medium text-primary   wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.5s">Understand our process</a>
+                <a href="{% url 'process' %}" class="medium text-primary   wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.5s">Understand our process</a>
             </div>
         </div>
     </div>
@@ -52,7 +52,7 @@
         <div class="row">
             <div class="col-md-7 offset-md-1 mb-5">
                 <p class="h3 text-dark-grey medium mb-4   wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">We also take immense pride on our dedication to our clients through swift response and exceptional customer service. With full enthusiasm, we seek to build solid long term relationship based on trust.</p>
-                <a href="contact.html" class="h4 medium text-primary   wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">Start a project with us</a>
+                <a href="{% url 'contact' %}" class="h4 medium text-primary   wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">Start a project with us</a>
             </div>
         </div>
     </div>
