@@ -1,0 +1,166 @@
+.modal {
+    &-open {
+        position: fixed;
+    }
+
+    &-dialog {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    &-content {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        background-color: $background-color;
+        overflow-y: auto;
+
+        @include mobile {
+            height: 100%;
+        }
+
+    }
+
+    &-body {
+        overflow-y: auto;
+    }
+}
+
+.split {
+    div {
+        div {
+    display: -moz-inline-stack;
+    *display: inline;
+        display: inline-block;
+        vertical-align: top;
+        }
+    }
+}
+
+.project-modal {
+    cursor: url(../images/close.png), auto;
+
+    .modal-content {
+        @include tablet {
+            padding: 3rem;
+
+            img {
+                width: 30vw;
+            }
+        }
+    }
+
+    .container {
+        @include mobile {
+            position: relative;
+
+            &:before {
+                content: "";
+
+                background: {
+                    image: url('../images/close.png');
+                    size: cover;
+                    position: center;
+                }
+
+                background-color: rgab(0, 0, 0, 0.5);
+                z-index: 99;
+                width: 23.5px;
+                height: 23.5px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 4px;
+            }
+        }
+
+    }
+
+    .p-mdl-details {
+        @include flexbox();
+        @include align-items(start);
+
+        .p-mdl-header {
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(space-between);
+
+            h4 {
+                white-space: pre-line;
+                max-width: 50%;
+                font-family: $lt-bld;
+                margin-left: -10%;
+
+                @include mobile {
+                    max-width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+
+    }
+
+    .m-el {
+        @for $i from 1 through 12 {
+            &:nth-child(#{$i}) {
+                opacity: 0;
+                transform: translateY(50px);
+                $delay: $i/10;
+                @include transition(all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1));
+                transition-delay: 0s;
+            }
+        }
+    }
+
+    &.closing {
+        opacity: 0;
+        @include transition(all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1));
+    }
+
+    &.show {
+        .m-el {
+            @for $i from 1 through 12 {
+                &:nth-child(#{$i}) {
+                    opacity: 1;
+                    transform: translateY(0);
+                    $delay: $i/10;
+                    @include transition(all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1));
+                    transition-delay: #{ 0.2 + $delay }s;
+                }
+            }
+        }
+    }
+
+    @include tablet {
+
+
+        .p-mdl-details {
+            @include flex-direction(column);
+            @include align-items(center);
+
+            .p-mdl-header {
+
+                h4 {
+                    margin-left: 0;
+                }
+            }
+
+        }
+    }
+
+    @include mobile {
+        .p-mdl-details {
+            text-align: center;
+            @include flex-direction(column);
+            @include align-items(center);
+
+            .p-mdl-header {
+                @include flex-direction(column);
+
+                h4 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

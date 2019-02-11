@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.998 46.674">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#33ffd8;opacity:.7}.cls-2{fill:#98ffc8}
+        </style>
+    </defs>
+    <g id="inquiry-icon" transform="translate(-241.999 -526.999)">
+        <path id="Subtraction_1" d="M93.346 46.675H0a46.453 46.453 0 0 1 7.971-26.1A46.806 46.806 0 0 1 28.507 3.668a46.613 46.613 0 0 1 44.262 4.3 46.816 46.816 0 0 1 16.91 20.535 46.382 46.382 0 0 1 3.668 18.167z" class="cls-1" data-name="Subtraction 1" transform="translate(241.999 527)"/>
+        <path id="Subtraction_2" d="M93.346 46.675H0a46.453 46.453 0 0 1 7.971-26.1A46.806 46.806 0 0 1 28.507 3.668a46.613 46.613 0 0 1 44.262 4.3 46.816 46.816 0 0 1 16.91 20.535 46.382 46.382 0 0 1 3.668 18.167z" class="cls-2" data-name="Subtraction 2" transform="translate(293.651 527)"/>
+    </g>
+</svg>

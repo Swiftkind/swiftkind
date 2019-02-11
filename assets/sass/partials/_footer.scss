@@ -1,0 +1,9 @@
+.footer-social{
+	text-align: right;
+	@include mobile{
+		text-align: center;
+		@include flexbox();
+		@include align-items(center);
+		@include justify-content(space-between);
+	}
+}

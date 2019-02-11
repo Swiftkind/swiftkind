@@ -1,0 +1,28 @@
+//overrides
+
+
+
+//global
+@import 'global/typography';
+@import 'global/mixins';
+@import 'global/variables';
+
+
+@import 'overrides/swiper';
+@import 'overrides/animations';
+@import 'overrides/bootstrap';
+
+
+@import 'global/utils';
+
+
+// partials
+@import 'partials/navbar'; 
+@import 'partials/header'; 
+@import 'partials/footer'; 
+	
+// pages
+@import 'pages/homepage';
+@import 'pages/about';
+@import 'pages/process';
+@import 'pages/contact';

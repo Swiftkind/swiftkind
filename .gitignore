@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+
+Dockerfile
+db.sqlite3
+
+media/
+static/

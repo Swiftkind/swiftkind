@@ -1,0 +1,120 @@
+.projects {
+    position: relative;
+    .project-list{
+        @include justify-content(space-between);
+        @include tablet{
+            @include justify-content(center);
+        }
+        @include mobile{
+            @include justify-content(center);
+        }
+    }
+    .project-item {
+        width: 24.5rem;
+        height: 33.5rem;
+        margin-bottom: 4rem;
+        @include mobile{
+            width: 80vw;
+            height: 120vw;
+
+        }
+
+        .img-cover {
+            width: 24.5rem;
+            height: 33.5rem;
+            @include mobile{
+                width: 80vw;
+                height: 120vw;
+
+            }
+
+            position: absolute;
+        }
+
+        .project-photo {
+            width: 24.5rem;
+            height: 33.5rem;
+            @include mobile{
+                width: 80vw;
+                height: 120vw;
+
+            }
+            -webkit-background-size: cover;
+            background-size: cover;
+            z-index: 1;
+            position: absolute;
+        }
+
+        &.odd {
+            .product-details {
+                right: 3rem;
+            }
+        }
+
+        &.even {
+            margin-top: 4rem;
+
+            .product-details {
+                left: 3rem;
+            }
+        }
+
+        .product-details {
+            position: absolute;
+            z-index: 3;
+            bottom: 0;
+
+        }
+
+        .pro-link {
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+
+    }
+}
+
+.commitment{
+    @include mobile{
+        font-size: 1.5rem;
+    }
+}
+
+.hero-links {
+    @include tablet {
+        margin-top: 3rem;
+        @include flexbox();
+        @include justify-content(space-between);
+
+    }
+    @include mobile{
+        display: none;
+    }
+}
+
+.open-details {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: $grey;
+    z-index: 99;
+
+}
+
+.scroll-down {
+    @include inline-flexbox();
+    @include align-items(center);
+    @include flex-direction(column);
+
+    .scroll-indicator {
+        width: 2px;
+        height: 30px;
+        background-color: $white;
+        display: block;
+
+    }
+}

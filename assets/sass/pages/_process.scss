@@ -1,0 +1,18 @@
+.process-details{
+	.process-icon{
+		 width: 145px;
+	}
+}
+
+.testimonies{
+	.testimony{
+		line-height: 1.5;
+	}
+}
+
+.logo-meaning{
+	@include mobile{
+		text-align: center;
+		margin-bottom: 6rem;
+	}
+}

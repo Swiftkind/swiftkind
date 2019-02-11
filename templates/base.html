@@ -1,0 +1,136 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    
+    <!-- PLUG INS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/animate.css/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/swiper/dist/css/swiper.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/ionicons/css/ionicons.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/bootstrap/dist/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <!-- PLUG INS -->
+
+    <title>Swiftkind</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top" id="mainNav">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="index.html" class="navbar-brand">
+                <img src="{% static 'images/logo-square-white.png' %}" data-rjs="3" class="logo-square-white">
+            </a>
+            <a class="menuToggle">
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+            </a>
+        </div>
+        <div class="nav-menu">
+            <div class="container">
+                <div class="d-flex align-items-start justify-content-between w-100">
+                    <div class="navigation-links">
+                        <a href="/" class="active">Home</a>
+                        <a href="/process/">Process</a>
+                        <a href="/about/">Our Story</a>
+                        <a href="/contact/">Contact</a>
+                    </div>
+                    <div class="blog-link">
+                        <p class="text-light">Blogs</p>
+                        <div class="blog">
+                            <a href="" class="">
+                                <h6 class="mb-0">Transforming JavaScript arrays with array.map</h6>
+                                <small class="text-grey">#django #python #heroku</small>
+                            </a>
+                            <a href="" class="">
+                                <h6 class="mb-0">Finding Key-Value pairs on JSON  data with Python’s List Comprehension</h6>
+                                <small class="text-grey">#django #python #heroku</small>
+                            </a>
+                            <a href="" class="">
+                                <h6 class="mb-0">Creating Simple SVGs with Photoshop CC</h6>
+                                <small class="text-grey">#photoshop #svg</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-info">
+                    <div class="address">
+                        <h5 class="">SWIFTKIND HQ.</h5>
+                        <p class=""> Door 1, 3rd Floor, Consuelo Building,
+                            <br/>
+                            J.P. Laurel Avenue, Lanang, Davao City, 
+                            <br/>Philippines, 8000</p>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-between">
+                        <div class="social-link">
+                            <p>More about us</p>
+                            <div class="d-flex">
+                                <a href="https://github.com/swiftkind" class="">
+                                    <span class="icon ion-social-github"></span>
+                                </a>
+                                <a href="https://ph.linkedin.com/company/swiftkind" class="">
+                                    <span class="icon ion-social-linkedin"></span>
+                                </a>
+                                <a href="https://www.facebook.com/swiftkind" class="">
+                                    <span class="icon ion-social-facebook"></span>
+                                </a>
+                            </div>
+                        </div>
+                         <p class="hiring-link">Want to work with us? <a href="https://www.facebook.com/swiftkind/photos/a.391950621158684/714704812216595/?type=3&theater">Join our team!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="page-wrapper">
+        {% block content %}
+        {% endblock %}
+        <footer class="py-5">
+            <div class="container">
+                <div class="text-center py-5 mb-5">
+                    <h3 class="mb-5  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Let’s talk about the future</h3>
+                    <a href="contact.html" class="link-icon wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">Start a project with us <img src="{% static 'images/arrow-right.svg' %}" class="ml-2"></a>
+                </div>
+                <div class="row justify-content-between py-5">
+                    <div class="col-lg-4 col-md-6  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
+                        <h5 class="text-smb">contact@swiftkind.com</h5>
+                        <p>
+                            Door 1, 3rd Floor, Consuelo Building, J.P. Laurel Avenue, Lanang, Davao City, Philippines, 8000
+                        </p>
+                        <p>
+                            (082) 225 - 1050
+                        </p>
+                    </div>
+                    <div class="col footer-social  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
+                        <p class="text-smb">Follow us</p>
+                        <a href="https://github.com/swiftkind" class="d-block mb-3">Github</a>
+                        <a href="https://ph.linkedin.com/company/swiftkind" class="d-block mb-3">Linkedin</a>
+                        <a href="https://www.facebook.com/swiftkind" class="d-block mb-3">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="{% static 'node_modules/jquery/dist/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'node_modules/popper.js/dist/umd/popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'node_modules/swiper/dist/js/swiper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'node_modules/wowjs/dist/wow.min.js' %}"></script>
+    
+    <script type="text/javascript" src="{% static 'js/dist/splitText/SplitText.js' %}"></script>
+    <script type="text/javascript" src="{% static 'node_modules/animejs/anime.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dist/jquery-inertia-scroll/jquery-inertiaScroll.js' %}"></script>
+    <script type="text/javascript" src="{% static 'node_modules/retinajs/dist/retina.min.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/contact.js' %}"></script>
+
+</body>
+
+</html>

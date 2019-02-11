@@ -1,0 +1,143 @@
+html,
+body {
+    height: 100%;
+    @include desktop{
+        font-size: 0.9rem;
+    }
+     @include tablet{
+        font-size: 1rem;
+    }
+    @include mobile{
+        font-size: 0.8rem;
+    }
+    
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    line-height: 1.5;
+}
+
+//typography
+h1,
+.h1 {
+    font-size: 4rem;
+    font-family: $lt-md;
+    @include mobile{
+        font-size: 3rem;
+    }
+
+}
+
+h2,
+.h2 {
+    font-size: 3.5rem;
+}
+
+h3,
+.h3 {
+    font-size: 2.625rem;
+}
+
+h4,
+.h4 {
+    font-size: 2.25rem;
+
+}
+
+h5,
+.h5 {
+    font-size: 1.5rem;
+    font-family: $pr-lgt;
+}
+
+h6,
+.h6 {
+    font-size: 1.125rem;
+}
+
+p {
+    font-size: 1rem;
+    letter-spacing: 0.003rem;
+    line-height: 1.75 !important;
+}
+
+label {
+    font-size: 1rem;
+}
+
+small {
+    font-size: 0.85rem;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+        text-decoration: none;
+        color: $white;
+    }
+
+    &.link-icon {
+        img {
+            width: 35px;
+        }
+    }
+}
+.header-text{
+    @include mobile{
+        font-size: 2.5rem;
+    }
+}
+.sm-h-text{
+    @include mobile{
+        font-size: 1.5rem;
+    }
+}
+
+.text-grey {
+    color: $grey;
+}
+
+.text-smb {
+    font-family: $lt-sb;
+}
+
+.text-lgti {
+    font-family: $lt-lgti;
+}
+
+.text-light {
+    font-family: $lt-lgt;
+}
+
+.text-difference {
+    * {
+        mix-blend-mode: difference;
+    }
+}
+
+
+.text-spaced-1 {
+    letter-spacing: 1px;
+}
+
+.section {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.xs-section{
+    @include mobile{
+        height: 100vh;
+    }
+}
+
+
+//images
+
+.bg-img-cover {
+    background: {
+        size:cover;
+        position: center;
+    }
+}

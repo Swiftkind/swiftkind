@@ -1,0 +1,35 @@
+.member-item {
+    position: relative;
+            height: 500px;
+    .img-wrapper {
+        @include flexbox();
+        @include justify-content(center);
+
+        .member-img {
+            position: absolute;
+            cursor: pointer;
+
+            &.img1 {
+                z-index: 1;
+
+            }
+
+            &.img2 {
+                z-index: 2;
+                opacity: 0;
+                 @include transition(all ease 0.5s);
+            }
+
+        }
+
+        &:hover {
+            .img2 {
+                opacity: 2;
+                @include transition(all ease 0.5s);
+            }
+        }
+    }
+    @include tablet{
+    	height: 400px;
+    }
+}

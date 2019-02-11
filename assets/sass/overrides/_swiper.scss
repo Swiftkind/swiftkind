@@ -1,0 +1,113 @@
+.swiper {
+    &-container {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &-wrapper {
+        width: 100%;
+
+    }
+
+    &-slide {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#svcSwiper {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        position: absolute;
+        z-index: 99;
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        position: absolute;
+        z-index: 99;
+        bottom:0;
+    }
+
+    .swiper-wrapper {
+        height: 500px;
+        @include tablet {
+            height: 80vh;
+        }
+        @include mobile {
+            max-height: 120vh;
+        }
+        .swiper-slide {
+            overflow-y: auto;
+            overflow-x: hidden;
+            @include no-scroll-bar();
+            padding-top: 100px;
+
+            h2 {
+                opacity: 0;
+                @include transition(ease all 0.3s);
+                font-family: $lt-sb;
+
+                @include tablet {
+                    margin-bottom: 0;
+                    font-size: 2.5rem;
+                }
+
+                @include mobile {
+                    font-size: 2rem;
+                    display: none;
+                }
+
+
+            }
+
+            .h5 {
+                @include mobile {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .svc-details {
+                opacity: 0;
+                @include transition(ease all 0.3s);
+            }
+
+            &.swiper-slide-active {
+                h2 {
+
+                    &.active {
+                        display: block;
+                        opacity: 1;
+                        font-size: 4rem;
+                        font-family: $lt-bld;
+                        @include transition(ease all 0.3s);
+
+                        @include tablet {
+                            font-size: 3rem;
+                        }
+
+                        @include mobile {
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+
+                .svc-details {
+                    opacity: 1;
+                    @include transition(ease all 0.3s);
+                    transition-delay: 0.2s;
+                }
+            }
+
+        }
+    }
+
+}

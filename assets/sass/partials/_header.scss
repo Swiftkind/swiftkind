@@ -1,0 +1,11 @@
+body{
+	&.disable-scroll{
+		position: relative;
+		overflow: hidden;
+		.page-wrapper{
+			position: initial !important;
+			width: unset !important;
+			height: unset !important;
+		}
+	}
+}
